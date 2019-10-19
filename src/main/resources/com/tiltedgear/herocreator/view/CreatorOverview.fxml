@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import java.net.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.FXCollections?>
+<?import java.net.URL?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane layoutX="24.0" layoutY="24.0" prefHeight="372.0" prefWidth="572.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <tabs>
+            <Tab text="Hero Creator">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+            <Tab text="Ability Creator">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea layoutX="25.0" layoutY="116.0" prefHeight="200.0" prefWidth="250.0" />
+                        <TextField layoutX="25.0" layoutY="46.0" prefHeight="27.0" prefWidth="250.0" />
+                        <Label layoutX="25.0" layoutY="19.0" text="Ability Name" textFill="WHITE" />
+                        <ComboBox layoutX="297.0" layoutY="46.0" prefWidth="150.0" />
+                        <Label layoutX="297.0" layoutY="19.0" text="Damage Type" textFill="WHITE" />
+                        <Label layoutX="25.0" layoutY="91.0" text="Ability Description" textFill="WHITE" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+         <stylesheets>
+            <URL value="@stylesheet.css" />
+         </stylesheets>
+      </TabPane>
+   </children>
+</AnchorPane>
