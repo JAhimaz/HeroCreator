@@ -14,7 +14,7 @@ object HeroApp extends JFXApp {
   val roots = loader.getRoot[jfxs.layout.BorderPane]
 
   stage = new PrimaryStage{
-    title = "HeroCreator"
+    title = "Hero Creator | TiltedGear Studios"
     resizable = false
     scene = new Scene{
       root = roots
@@ -22,7 +22,7 @@ object HeroApp extends JFXApp {
   }
 
   def showAbilityCreatorOverview() = {
-    val resource = getClass.getResource("view/AbilityCreatorOverview.fxml")
+    val resource = getClass.getResource("view/CreatorOverview.fxml")
     val loader = new FXMLLoader(resource, NoDependencyResolver)
     loader.load()
     val roots = loader.getRoot[jfxs.layout.Pane]
@@ -30,5 +30,4 @@ object HeroApp extends JFXApp {
   }
 
   showAbilityCreatorOverview()
-
 }
