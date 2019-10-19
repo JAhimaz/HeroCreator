@@ -42,3 +42,35 @@
 .text-area:focused .content {
     -fx-background-color: #222222;
 }
+
+/* Tab Pane Styling */
+.tab-header-background {
+    -fx-background-color: black;
+}
+
+.tab-pane {
+    -fx-background-color: #2f2f2f;
+    -fx-border-color: black;
+    -fx-border-width: 2;
+}
+
+.tab {
+    -fx-pref-width: 150;
+    -fx-pref-height: 30;
+    -fx-background-color: #2f2f2f;
+    -fx-background-insets: 0.0;
+}
+
+.tab-label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 12;
+}
+
+.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected {
+    -fx-background-color: black;
+}
+
+.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {
+    -fx-border-color: transparent;
+}
