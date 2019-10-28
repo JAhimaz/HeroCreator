@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Mon Oct 28 22:44:50 SRET 2019:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-016e-12d3-a152-00000f691000 
+on database directory D:\Projects\HeroCreator\myDB with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@28c97a5 
+Loaded from file:/C:/Users/User/.ivy2/cache/org.apache.derby/derby/jars/derby-10.13.1.1.jar
+java.vendor=Oracle Corporation
+java.runtime.version=10.0.1+10
+user.dir=D:\Projects\HeroCreator
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
