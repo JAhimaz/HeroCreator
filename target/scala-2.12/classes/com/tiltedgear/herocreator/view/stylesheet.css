@@ -32,7 +32,7 @@
 .exit-button {
     -fx-background-color:
         #000000,
-        linear-gradient(#222222, #2f2f2f),
+        transparent,
         linear-gradient(#ff3838, #ff3838),
         linear-gradient(#ff3838, #d12e2e);
     -fx-background-insets: 0,1,2,3;
@@ -42,12 +42,12 @@
     -fx-font-size: 12px;
 }
 
-.exit-button:hover{
-      -fx-background-color:
-          #000000,
-          linear-gradient(#222222, #2f2f2f),
-          linear-gradient(#ff3838, #ff3838),
-          linear-gradient(#ff1717, #a12020);
+.exit-button:hover {
+    -fx-background-color:
+      #000000,
+      transparent,
+      linear-gradient(#ff3838, #ff3838),
+      linear-gradient(#ff1717, #a12020);
 }
 
  /*Edit The control itself*/
