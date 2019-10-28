@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import javafx.scene.effect.*?>
 <?import javafx.geometry.*?>
 <?import java.net.*?>
@@ -10,34 +11,33 @@
 <?import javafx.collections.FXCollections?>
 <?import java.net.URL?>
 
-<AnchorPane prefHeight="600" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="600" prefWidth="800.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <TabPane layoutX="24.0" layoutY="24.0" prefHeight="372.0" prefWidth="572.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <tabs>
-            <Tab text="Hero Creator">
-               <content>
-                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-               </content>
-            </Tab>
-            <Tab text="Ability Creator">
-               <content>
-                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+      <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+        <tabs>
+          <Tab text="Heroes">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+          <Tab text="Hero Creator">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <TextArea layoutX="19.0" layoutY="125.0" prefHeight="200.0" prefWidth="250.0" />
-                        <TextField layoutX="19.0" layoutY="49.0" prefHeight="27.0" prefWidth="250.0" />
-                        <Label layoutX="19.0" layoutY="25.0" text="Ability Name" textFill="WHITE" />
-                        <ComboBox layoutX="297.0" layoutY="49.0" prefWidth="150.0" />
-                        <Label layoutX="297.0" layoutY="25.0" text="Damage Type" textFill="WHITE" />
-                        <Label layoutX="19.0" layoutY="94.0" text="Ability Description" textFill="WHITE" />
+                        <TextArea layoutX="145.0" layoutY="91.0" prefHeight="200.0" prefWidth="250.0" />
+                        <TextField layoutX="108.0" layoutY="44.0" prefHeight="27.0" prefWidth="250.0" />
+                        <Label layoutX="289.0" layoutY="324.0" text="Ability Name" textFill="WHITE" />
+                        <ComboBox layoutX="446.0" layoutY="332.0" prefWidth="150.0" />
+                        <Label layoutX="120.0" layoutY="345.0" text="Damage Type" textFill="WHITE" />
+                        <Label layoutX="358.0" layoutY="27.0" text="Ability Description" textFill="WHITE" />
                      </children>
                   </AnchorPane>
-               </content>
-            </Tab>
-         </tabs>
-         <stylesheets>
-            <URL value="@stylesheet.css" />
-         </stylesheets>
+            </content>
+          </Tab>
+        </tabs>
       </TabPane>
-      <Button maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" text="X" AnchorPane.bottomAnchor="565.0" AnchorPane.leftAnchor="750.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
    </children>
+   <stylesheets>
+      <URL value="@stylesheet.css" />
+   </stylesheets>
 </AnchorPane>

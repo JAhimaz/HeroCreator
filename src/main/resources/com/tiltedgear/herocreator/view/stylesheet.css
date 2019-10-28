@@ -1,6 +1,32 @@
- .label {
-    -fx-font-weight: bold;
- }
+.dropshadow-general {
+    -fx-effect: dropshadow(gaussian, rgb(0, 0, 0, 0.2), 20, 0.3, 1, 1);
+}
+
+.herostats > .cell {
+    /* 1 pixel border around the left and bottom of each cell: */
+    -fx-background-color: white, white ;
+    -fx-background-insets: 0, 0 0 1 1 ;
+}
+
+.herostats {
+    -fx-border-width: 0.2;
+    -fx-border-color: white;
+    -fx-background-color: #222222;
+    -fx-stroke: red;
+}
+
+.exit-button {
+    -fx-background-color:
+        #000000,
+        linear-gradient(#222222, #2f2f2f),
+        linear-gradient(#ff3838, #ff3838),
+        linear-gradient(#ff3838, #d12e2e);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-padding: 5 10 5 10;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+}
 
  /*Edit The control itself*/
 .combo-box {
@@ -43,15 +69,18 @@
     -fx-background-color: #222222;
 }
 
+.inner-pane {
+    -fx-background-color: #dddddd;
+    -fx-effect: innershadow( gaussian, rgba(0, 0, 0, 0.3), 10, 0.3, 1, 1);
+}
+
 /* Tab Pane Styling */
 .tab-header-background {
-    -fx-background-color: black;
+    -fx-background-color:  #0a0a0a;
 }
 
 .tab-pane {
     -fx-background-color: #2f2f2f;
-    -fx-border-color: black;
-    -fx-border-width: 2;
 }
 
 .tab {
