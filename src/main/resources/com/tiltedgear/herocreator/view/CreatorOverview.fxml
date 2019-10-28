@@ -74,7 +74,7 @@
           </Tab>
         </tabs>
       </TabPane>
-      <Button mnemonicParsing="false" styleClass="lion-button" text="X" textFill="WHITE" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
+      <Button mnemonicParsing="false" styleClass="exit-button" text="X" textFill="WHITE" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
    </children>
    <stylesheets>
       <URL value="@stylesheet.css" />

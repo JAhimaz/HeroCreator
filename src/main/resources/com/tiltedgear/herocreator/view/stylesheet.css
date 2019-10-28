@@ -15,10 +15,10 @@
     -fx-stroke: red;
 }
 
-.lion-button {
+.exit-button {
     -fx-background-color:
         #000000,
-        linear-gradient(#ffffff, #ffffff),
+        linear-gradient(#222222, #2f2f2f),
         linear-gradient(#ff3838, #ff3838),
         linear-gradient(#ff3838, #d12e2e);
     -fx-background-insets: 0,1,2,3;
