@@ -15,7 +15,7 @@ import scalafx.stage.StageStyle
 
 object HeroApp extends JFXApp {
 
-  val resource = getClass.getResource("view/CreatorOverview.fxml")
+  val resource = getClass.getResource("view/HeroOverview.fxml")
   val loader = new FXMLLoader(resource, NoDependencyResolver)
   loader.load()
   val roots = loader.getRoot[jfxs.layout.AnchorPane]
