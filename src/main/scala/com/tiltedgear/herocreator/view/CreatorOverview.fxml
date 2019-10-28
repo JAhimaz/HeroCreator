@@ -1,32 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.shape.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.text.*?>
-<?import javafx.scene.effect.*?>
-<?import javafx.geometry.*?>
-<?import java.net.*?>
-<?import javafx.collections.*?>
-<?import javafx.scene.control.*?>
 <?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.collections.FXCollections?>
-<?import java.net.URL?>
 
 <AnchorPane prefHeight="600" prefWidth="600.0" style="-fx-background-color: #0a0a0a;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
-        <tabs>
-          <Tab text="Heroes">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-            </content>
-          </Tab>
-          <Tab text="Hero Creator">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <tabs>
+            <Tab text="Hero Creator">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #363636;" styleClass="inner-pane" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                        <Pane prefHeight="200.0" prefWidth="200.0" styleClass="inner-pane" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
                            <children>
                               <TextArea layoutX="27.0" layoutY="188.0" prefHeight="132.0" prefWidth="250.0" styleClass="dropshadow-general" />
                               <TextField layoutX="27.0" layoutY="47.0" prefHeight="27.0" prefWidth="250.0" styleClass="dropshadow-general" />
@@ -41,16 +29,6 @@
                               <ComboBox layoutX="304.0" layoutY="45.0" prefHeight="27.0" prefWidth="112.0" styleClass="dropshadow-general" />
                               <Label layoutX="304.0" layoutY="22.0" text="Nationality" textFill="WHITE" />
                               <GridPane layoutX="304.0" layoutY="115.0" prefHeight="123.0" prefWidth="237.0" styleClass="dropshadow-general">
-                                <columnConstraints>
-                                  <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                                </columnConstraints>
-                                <rowConstraints>
-                                  <RowConstraints maxHeight="86.0" minHeight="1.0" percentHeight="100.0" prefHeight="40.0" vgrow="NEVER" />
-                                    <RowConstraints maxHeight="86.0" minHeight="10.0" percentHeight="100.0" prefHeight="40.0" vgrow="NEVER" />
-                                    <RowConstraints maxHeight="86.0" minHeight="10.0" percentHeight="100.0" prefHeight="40.0" vgrow="NEVER" />
-                                  <RowConstraints maxHeight="181.0" minHeight="9.0" percentHeight="100.0" prefHeight="40.0" vgrow="NEVER" />
-                                </rowConstraints>
                                  <children>
                                     <Label text="Health" textFill="WHITE" />
                                     <Label text="Armour" textFill="WHITE" GridPane.rowIndex="1" />
@@ -61,6 +39,16 @@
                                     <TextField prefHeight="27.0" prefWidth="250.0" styleClass="dropshadow-general" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                                     <TextField prefHeight="27.0" prefWidth="250.0" styleClass="dropshadow-general" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                                  </children>
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints maxHeight="86.0" minHeight="1.0" percentHeight="100.0" prefHeight="40.0" vgrow="NEVER" />
+                                    <RowConstraints maxHeight="86.0" minHeight="10.0" percentHeight="100.0" prefHeight="40.0" vgrow="NEVER" />
+                                    <RowConstraints maxHeight="86.0" minHeight="10.0" percentHeight="100.0" prefHeight="40.0" vgrow="NEVER" />
+                                    <RowConstraints maxHeight="181.0" minHeight="9.0" percentHeight="100.0" prefHeight="40.0" vgrow="NEVER" />
+                                 </rowConstraints>
                               </GridPane>
                               <Label layoutX="304.0" layoutY="92.0" text="Hero Stats" textFill="WHITE" />
                               <Button layoutX="504.0" layoutY="496.0" mnemonicParsing="false" styleClass="create-button" text="Create" />
@@ -71,9 +59,9 @@
                         </Pane>
                      </children>
                   </AnchorPane>
-            </content>
-          </Tab>
-        </tabs>
+               </content>
+            </Tab>
+         </tabs>
       </TabPane>
       <Button mnemonicParsing="false" styleClass="exit-button" text="X" textFill="WHITE" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
    </children>

@@ -1,3 +1,47 @@
+.split-pane:horizontal > .split-pane-divider {
+   -fx-background-color: transparent;
+}
+
+.dropshadow-general {
+    -fx-effect: dropshadow(gaussian, rgb(0, 0, 0, 0.2), 20, 0.3, 1, 1);
+}
+
+.herostats > .cell {
+    /* 1 pixel border around the left and bottom of each cell: */
+    -fx-background-color: white, white ;
+    -fx-background-insets: 0, 0 0 1 1 ;
+}
+
+.herostats {
+    -fx-border-width: 0.2;
+    -fx-border-color: white;
+    -fx-background-color: #222222;
+    -fx-stroke: red;
+}
+
+.create-button {
+    -fx-background-color:
+        linear-gradient(#f0ff35, #a9ff00),
+        radial-gradient(center 50% -40%, radius 200%, #b8ee36 45%, #80c800 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: black;
+}
+
+.exit-button {
+    -fx-background-color:
+        #000000,
+        linear-gradient(#222222, #2f2f2f),
+        linear-gradient(#ff3838, #ff3838),
+        linear-gradient(#ff3838, #d12e2e);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-padding: 5 10 5 10;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+}
+
  /*Edit The control itself*/
 .combo-box {
     -fx-background-color: #222222;
@@ -39,10 +83,14 @@
     -fx-background-color: #222222;
 }
 
+.inner-pane {
+    -fx-background-color: #363636;
+    -fx-effect: innershadow( gaussian, rgba(0, 0, 0, 0.3), 10, 0.3, 1, 1);
+}
 
 /* Tab Pane Styling */
 .tab-header-background {
-    -fx-background-color: black;
+    -fx-background-color:  #0a0a0a;
 }
 
 .tab-pane {
@@ -60,10 +108,6 @@
     -fx-text-fill: white;
     -fx-font-weight: bold;
     -fx-font-size: 12;
-}
-
-.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected {
-    -fx-background-color: black;
 }
 
 .tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {
