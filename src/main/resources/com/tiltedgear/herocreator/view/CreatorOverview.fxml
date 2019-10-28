@@ -63,6 +63,7 @@
                                  </children>
                               </GridPane>
                               <Label layoutX="304.0" layoutY="92.0" text="Hero Stats" textFill="WHITE" />
+                              <Button layoutX="504.0" layoutY="496.0" mnemonicParsing="false" styleClass="create-button" text="Create" />
                            </children>
                            <effect>
                               <InnerShadow />
