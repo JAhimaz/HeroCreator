@@ -42,6 +42,14 @@
     -fx-font-size: 12px;
 }
 
+.exit-button:hover{
+      -fx-background-color:
+          #000000,
+          linear-gradient(#222222, #2f2f2f),
+          linear-gradient(#ff3838, #ff3838),
+          linear-gradient(#ff1717, #a12020);
+}
+
  /*Edit The control itself*/
 .combo-box {
     -fx-background-color: #222222;
