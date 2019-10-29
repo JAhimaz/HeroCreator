@@ -28,10 +28,12 @@ class Hero(heroNameS: String, heroRoleS: String, heroAffiliationS: String, heroL
     if (!(isExist)) {
       Try(DB autoCommit { implicit session =>
         sql"""
-					insert into person (firstName, lastName,
-						street, postalCode, city, date) values
-						(${firstName.value}, ${lastName.value}, ${street.value},
-							${postalCode.value},${city.value}, ${date.value.asString})
+					insert into hero (heroName, heroRole,
+						heroAffiliation, heroLore, heroOccupation, heroRace, heroHealth, heroArmour, heroSpeed, heroBasedDamage, dateOfCreation) values
+						(${heroName.value}, ${heroRole.value}, ${heroAffiliation.value},
+							${heroLore.value},${heroOccupation.value},${heroRace.value},
+							${heroHealth.value},${heroArmour.value},${heroSpeed.value},
+							${heroBaseDamage.value},${dateOfCreation.value.asString})
 				""".update.apply()
       })
     } else {
@@ -39,14 +41,19 @@ class Hero(heroNameS: String, heroRoleS: String, heroAffiliationS: String, heroL
         sql"""
 				update person
 				set
-				firstName  = ${firstName.value} ,
-				lastName   = ${lastName.value},
-				street     = ${street.value},
-				postalCode = ${postalCode.value},
-				city       = ${city.value},
-				date       = ${date.value.asString}
-				 where firstName = ${firstName.value} and
-				 lastName = ${lastName.value}
+				heroName  = ${heroName.value},
+				heroRole   = ${heroRole.value},
+				heroAffiliation  = ${heroAffiliation.value},
+				heroLore = ${heroLore.value},
+				heroOccupation  = ${heroOccupation.value},
+				heroRace  = ${heroRace.value},
+				heroHealth  = ${heroHealth.value},
+				heroArmour  = ${heroArmour.value},
+				heroSpeed  = ${heroSpeed.value},
+				heroBaseDamage  = ${heroBaseDamage.value},
+				dateOfCreation  = ${dateOfCreation.value.asString}
+				 where heroName = ${heroName.value} and
+				 heroRole = ${heroRole.value}
 				""".update.apply()
       })
     }
@@ -57,18 +64,18 @@ class Hero(heroNameS: String, heroRoleS: String, heroAffiliationS: String, heroL
       Try(DB autoCommit { implicit session =>
         sql"""
 				delete from person where
-					firstName = ${firstName.value} and lastName = ${lastName.value}
+					heroName = ${heroName.value} and heroRole = ${heroRole.value}
 				""".update.apply()
       })
     } else
-      throw new Exception("Person not Exists in Database")
+      throw new Exception("Hero not Exists in Database")
   }
   def isExist : Boolean =  {
     DB readOnly { implicit session =>
       sql"""
-				select * from person where
-				firstName = ${firstName.value} and lastName = ${lastName.value}
-			""".map(rs => rs.string("firstName")).single.apply()
+				select * from hero where
+				heroName = ${heroName.value} and heroRole = ${heroRole.value}
+			""".map(rs => rs.string("heroName")).single.apply()
     } match {
       case Some(x) => true
       case None => false
