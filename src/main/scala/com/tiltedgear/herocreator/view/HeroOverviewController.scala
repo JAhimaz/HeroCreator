@@ -20,7 +20,7 @@ class HeroOverviewController(
   private val heroAffiliationLabel : Label,
   private val heroLoreLabel : Label,
   private val heroOccupationLabel : Label,
-  private val heroNationalityLabel : Label,
+  private val heroRaceLabel : Label,
   private val heroHealthLabel : Label,
   private val heroArmourLabel : Label,
   private val heroSpeedLabel : Label,
