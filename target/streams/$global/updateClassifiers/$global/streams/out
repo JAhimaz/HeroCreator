@@ -180,21 +180,6 @@
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.commons#commons-pool2;2.4.2 [compile->compile]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.commons#commons-pool2;2.4.2 [compile->compile(*)]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.commons#commons-pool2;2.4.2 [compile->master]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->default]
-[debug] sbt-chain: Checking cache for: dependency: org.apache.derby#derby;10.13.1.1 {compile=[default, compile, runtime, default(compile), master], runtime=[default, compile, runtime, default(compile), master], test=[default, compile, runtime, default(compile), master], compile-internal=[default, compile, runtime, default(compile), master], runtime-internal=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime, default(compile), master]}
-[debug] sbt-chain: module revision found in cache: org.apache.derby#derby;10.13.1.1
-[debug] 	found org.apache.derby#derby;10.13.1.1 in sbt-chain
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->runtime]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->master]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->runtime]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->default(compile)]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->runtime]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->master]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->master]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0 [compile->compile]
 [debug] sbt-chain: Checking cache for: dependency: org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]}
 [debug] sbt-chain: module revision found in cache: org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0
@@ -397,18 +382,6 @@
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.commons#commons-pool2;2.4.2 [compile->compile]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.commons#commons-pool2;2.4.2 [compile->compile(*)]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.commons#commons-pool2;2.4.2 [compile->master]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->default]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->runtime]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->master]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->runtime]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->default(compile)]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->runtime]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->master]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->master]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0 [compile->compile]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0 [compile->runtime(*)]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0 [compile->compile]
@@ -593,18 +566,6 @@
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.commons#commons-pool2;2.4.2 [runtime->compile]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.commons#commons-pool2;2.4.2 [runtime->compile(*)]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.commons#commons-pool2;2.4.2 [runtime->master]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->default]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->runtime]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->master]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->runtime]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->default(compile)]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->runtime]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->master]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->master]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0 [runtime->compile]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0 [runtime->runtime(*)]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0 [runtime->compile]
@@ -793,18 +754,6 @@
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.commons#commons-pool2;2.4.2 [compile->compile]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.commons#commons-pool2;2.4.2 [compile->compile(*)]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.commons#commons-pool2;2.4.2 [compile->master]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->default]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->runtime]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->master]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->runtime]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->default(compile)]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->runtime]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->master]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->master]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0 [compile->compile]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0 [compile->runtime(*)]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0 [compile->compile]
@@ -989,18 +938,6 @@
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.commons#commons-pool2;2.4.2 [runtime->compile]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.commons#commons-pool2;2.4.2 [runtime->compile(*)]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.commons#commons-pool2;2.4.2 [runtime->master]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->default]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->runtime]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->master]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->runtime]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->default(compile)]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->runtime]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->master]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->master]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0 [runtime->compile]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0 [runtime->runtime(*)]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0 [runtime->compile]
@@ -1185,18 +1122,6 @@
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.commons#commons-pool2;2.4.2 [test->compile]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.commons#commons-pool2;2.4.2 [test->compile(*)]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.commons#commons-pool2;2.4.2 [test->master]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [test->default]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [test->runtime]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [test->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [test->master]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [test->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [test->runtime]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [test->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [test->default(compile)]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [test->runtime]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [test->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [test->master]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [test->master]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0 [test->compile]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0 [test->runtime(*)]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0 [test->compile]
@@ -1388,18 +1313,6 @@
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.commons#commons-pool2;2.4.2 [compile->compile]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.commons#commons-pool2;2.4.2 [compile->compile(*)]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.commons#commons-pool2;2.4.2 [compile->master]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->default]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->runtime]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->master]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->runtime]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->default(compile)]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->runtime]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->master]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->master]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0 [compile->compile]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0 [compile->runtime(*)]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0 [compile->compile]
@@ -1586,18 +1499,6 @@
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.commons#commons-pool2;2.4.2 [compile-internal->compile]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.commons#commons-pool2;2.4.2 [compile-internal->compile(*)]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.commons#commons-pool2;2.4.2 [compile-internal->master]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile-internal->default]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile-internal->runtime]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile-internal->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile-internal->master]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile-internal->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile-internal->runtime]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile-internal->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile-internal->default(compile)]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile-internal->runtime]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile-internal->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile-internal->master]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile-internal->master]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0 [compile-internal->compile]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0 [compile-internal->runtime(*)]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0 [compile-internal->compile]
@@ -1786,18 +1687,6 @@
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.commons#commons-pool2;2.4.2 [compile->compile]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.commons#commons-pool2;2.4.2 [compile->compile(*)]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.commons#commons-pool2;2.4.2 [compile->master]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->default]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->runtime]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->master]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->runtime]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->default(compile)]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->runtime]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->master]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->master]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0 [compile->compile]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0 [compile->runtime(*)]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0 [compile->compile]
@@ -1982,18 +1871,6 @@
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.commons#commons-pool2;2.4.2 [runtime->compile]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.commons#commons-pool2;2.4.2 [runtime->compile(*)]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.commons#commons-pool2;2.4.2 [runtime->master]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->default]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->runtime]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->master]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->runtime]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->default(compile)]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->runtime]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->master]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->master]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0 [runtime->compile]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0 [runtime->runtime(*)]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0 [runtime->compile]
@@ -2179,18 +2056,6 @@
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.commons#commons-pool2;2.4.2 [runtime-internal->compile]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.commons#commons-pool2;2.4.2 [runtime-internal->compile(*)]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.commons#commons-pool2;2.4.2 [runtime-internal->master]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime-internal->default]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime-internal->runtime]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime-internal->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime-internal->master]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime-internal->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime-internal->runtime]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime-internal->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime-internal->default(compile)]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime-internal->runtime]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime-internal->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime-internal->master]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime-internal->master]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0 [runtime-internal->compile]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0 [runtime-internal->runtime(*)]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0 [runtime-internal->compile]
@@ -2380,18 +2245,6 @@
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.commons#commons-pool2;2.4.2 [compile->compile]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.commons#commons-pool2;2.4.2 [compile->compile(*)]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.commons#commons-pool2;2.4.2 [compile->master]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->default]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->runtime]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->master]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->runtime]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->default(compile)]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->runtime]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->master]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [compile->master]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0 [compile->compile]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0 [compile->runtime(*)]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0 [compile->compile]
@@ -2576,18 +2429,6 @@
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.commons#commons-pool2;2.4.2 [runtime->compile]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.commons#commons-pool2;2.4.2 [runtime->compile(*)]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.commons#commons-pool2;2.4.2 [runtime->master]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->default]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->runtime]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->master]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->runtime]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->default(compile)]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->runtime]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->master]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [runtime->master]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0 [runtime->compile]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0 [runtime->runtime(*)]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0 [runtime->compile]
@@ -2772,18 +2613,6 @@
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.commons#commons-pool2;2.4.2 [test->compile]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.commons#commons-pool2;2.4.2 [test->compile(*)]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.commons#commons-pool2;2.4.2 [test->master]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [test->default]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [test->runtime]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [test->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [test->master]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [test->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [test->runtime]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [test->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [test->default(compile)]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [test->runtime]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [test->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [test->master]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [test->master]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0 [test->compile]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0 [test->runtime(*)]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0 [test->compile]
@@ -2970,18 +2799,6 @@
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.commons#commons-pool2;2.4.2 [test-internal->compile]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.commons#commons-pool2;2.4.2 [test-internal->compile(*)]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.commons#commons-pool2;2.4.2 [test-internal->master]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [test-internal->default]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [test-internal->runtime]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [test-internal->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [test-internal->master]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [test-internal->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [test-internal->runtime]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [test-internal->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [test-internal->default(compile)]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [test-internal->runtime]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [test-internal->compile]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [test-internal->master]
-[debug] == resolving dependencies default#herocreator$sources;0.1->org.apache.derby#derby;10.13.1.1 [test-internal->master]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0 [test-internal->compile]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0 [test-internal->runtime(*)]
 [debug] == resolving dependencies default#herocreator$sources;0.1->org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0 [test-internal->compile]
@@ -3151,133 +2968,31 @@
 [debug] == resolving dependencies default#herocreator$sources;0.1->jline#jline;2.14.6 [scala-tool->master]
 [debug] 	resolved ivy file produced in cache
 [debug] :: downloading artifacts ::
-[debug] 	[NOT REQUIRED] org.scalafx#scalafxml-core-sfx8_2.12;0.4!scalafxml-core-sfx8_2.12.jar(src)
-[debug] 		tried C:\Users\User\.ivy2\local\org.scalikejdbc\scalikejdbc_2.12\3.1.0\srcs\scalikejdbc_2.12-sources.jar
-[debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.10!scala-reflect.jar(src)
-[debug] 		tried https://repo1.maven.org/maven2/org/scalikejdbc/scalikejdbc_2.12/3.1.0/scalikejdbc_2.12-3.1.0-sources.jar
-[debug] 	[NOT REQUIRED] org.scalafx#scalafxml-core-macros-sfx8_2.12;0.4!scalafxml-core-macros-sfx8_2.12.jar(src)
-[debug] 		tried C:\Users\User\.ivy2\local\ch.qos.logback\logback-classic\1.2.3\srcs\logback-classic-sources.jar
-[debug] 		tried C:\Users\User\.ivy2\local\joda-time\joda-time\2.9.9\srcs\joda-time-sources.jar
-[debug] 		tried C:\Users\User\.ivy2\local\org.scalikejdbc\scalikejdbc-core_2.12\3.1.0\srcs\scalikejdbc-core_2.12-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3-sources.jar
+[debug] 	[NOT REQUIRED] org.scalikejdbc#scalikejdbc-core_2.12;3.1.0!scalikejdbc-core_2.12.jar(src)
+[debug] 	[NOT REQUIRED] org.scalikejdbc#scalikejdbc_2.12;3.1.0!scalikejdbc_2.12.jar(src)
+[debug] 	[NOT REQUIRED] commons-logging#commons-logging;1.2!commons-logging.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.12.10!scala-library.jar(src)
-[debug] 		tried https://repo1.maven.org/maven2/joda-time/joda-time/2.9.9/joda-time-2.9.9-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/scalikejdbc/scalikejdbc-core_2.12/3.1.0/scalikejdbc-core_2.12-3.1.0-sources.jar
-[debug] 		tried C:\Users\User\.ivy2\local\org.slf4j\slf4j-api\1.7.25\srcs\slf4j-api-sources.jar
-[debug] 		tried C:\Users\User\.ivy2\local\commons-logging\commons-logging\1.2\srcs\commons-logging-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/scalikejdbc/scalikejdbc_2.12/3.1.0/scalikejdbc_2.12-3.1.0-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scalikejdbc/scalikejdbc_2.12/3.1.0/scalikejdbc_2.12-3.1.0-sources.jar
-[info] downloading https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3-sources.jar ...
-[info] downloading https://repo1.maven.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2-sources.jar ...
-[info] downloading https://repo1.maven.org/maven2/joda-time/joda-time/2.9.9/joda-time-2.9.9-sources.jar ...
-[info] downloading https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/joda-time/joda-time/2.9.9/joda-time-2.9.9-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/scalikejdbc/scalikejdbc-core_2.12/3.1.0/scalikejdbc-core_2.12-3.1.0-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scalikejdbc/scalikejdbc-core_2.12/3.1.0/scalikejdbc-core_2.12-3.1.0-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25-sources.jar.sha1
-[debug] 	public: downloading https://repo1.maven.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2-sources.jar.sha1
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scalikejdbc/scalikejdbc_2.12/3.1.0/scalikejdbc_2.12-3.1.0-sources.jar.sha1
-[debug] 	public: downloading https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3-sources.jar.sha1
-[debug] 	public: downloading https://repo1.maven.org/maven2/joda-time/joda-time/2.9.9/joda-time-2.9.9-sources.jar.sha1
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scalikejdbc/scalikejdbc-core_2.12/3.1.0/scalikejdbc-core_2.12-3.1.0-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/scalikejdbc/scalikejdbc_2.12/3.1.0/scalikejdbc_2.12-3.1.0-sources.jar
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25-sources.jar
-[debug] sha1 OK for https://repo1.maven.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2-sources.jar
-[info] 	[SUCCESSFUL ] org.scalikejdbc#scalikejdbc_2.12;3.1.0!scalikejdbc_2.12.jar(src) (1934ms)
-[debug] 		tried C:\Users\User\.ivy2\local\org.joda\joda-convert\1.8.2\srcs\joda-convert-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/joda/joda-convert/1.8.2/joda-convert-1.8.2-sources.jar
-[info] 	[SUCCESSFUL ] org.slf4j#slf4j-api;1.7.25!slf4j-api.jar(src) (1932ms)
-[info] 	[SUCCESSFUL ] commons-logging#commons-logging;1.2!commons-logging.jar(src) (1933ms)
-[debug] 		tried C:\Users\User\.ivy2\local\org.apache.commons\commons-dbcp2\2.1.1\srcs\commons-dbcp2-sources.jar
-[debug] 		tried C:\Users\User\.ivy2\local\org.scala-lang.modules\scala-parser-combinators_2.12\1.0.6\srcs\scala-parser-combinators_2.12-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/commons/commons-dbcp2/2.1.1/commons-dbcp2-2.1.1-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.0.6/scala-parser-combinators_2.12-1.0.6-sources.jar
-[debug] sha1 OK for https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3-sources.jar
-[info] 	[SUCCESSFUL ] ch.qos.logback#logback-classic;1.2.3!logback-classic.jar(src) (1971ms)
-[debug] 		tried C:\Users\User\.ivy2\local\org.apache.commons\commons-pool2\2.4.2\srcs\commons-pool2-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/commons/commons-pool2/2.4.2/commons-pool2-2.4.2-sources.jar
-[debug] sha1 OK for https://repo1.maven.org/maven2/joda-time/joda-time/2.9.9/joda-time-2.9.9-sources.jar
-[info] 	[SUCCESSFUL ] joda-time#joda-time;2.9.9!joda-time.jar(src) (2173ms)
-[debug] 		tried C:\Users\User\.ivy2\local\org.apache.derby\derby\10.13.1.1\srcs\derby-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/derby/derby/10.13.1.1/derby-10.13.1.1-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.0.6/scala-parser-combinators_2.12-1.0.6-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.0.6/scala-parser-combinators_2.12-1.0.6-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/apache/commons/commons-dbcp2/2.1.1/commons-dbcp2-2.1.1-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/commons/commons-dbcp2/2.1.1/commons-dbcp2-2.1.1-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/apache/commons/commons-pool2/2.4.2/commons-pool2-2.4.2-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/commons/commons-pool2/2.4.2/commons-pool2-2.4.2-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/joda/joda-convert/1.8.2/joda-convert-1.8.2-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/joda/joda-convert/1.8.2/joda-convert-1.8.2-sources.jar
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/scalikejdbc/scalikejdbc-core_2.12/3.1.0/scalikejdbc-core_2.12-3.1.0-sources.jar
-[info] 	[SUCCESSFUL ] org.scalikejdbc#scalikejdbc-core_2.12;3.1.0!scalikejdbc-core_2.12.jar(src) (2413ms)
-[debug] 		tried C:\Users\User\.ivy2\local\org.scalikejdbc\scalikejdbc-interpolation_2.12\3.1.0\srcs\scalikejdbc-interpolation_2.12-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/scalikejdbc/scalikejdbc-interpolation_2.12/3.1.0/scalikejdbc-interpolation_2.12-3.1.0-sources.jar
-[debug] CLIENT ERROR:  url=https://repo1.maven.org/maven2/org/apache/derby/derby/10.13.1.1/derby-10.13.1.1-sources.jar
-[debug] 		tried C:\Users\User\.sbt\preloaded\org.apache.derby\derby\10.13.1.1\srcs\derby-sources.jar
-[debug] 		tried file:/C:/Users/User/.sbt/preloaded/org/apache/derby/derby/10.13.1.1/derby-10.13.1.1-sources.jar
-[warn] 	Detected merged artifact: [FAILED     ] org.apache.derby#derby;10.13.1.1!derby.jar(src):  (0ms).
-[warn] ==== local: tried
-[warn] ==== public: tried
-[warn] ==== local-preloaded-ivy: tried
-[warn]   C:\Users\User\.sbt\preloaded\org.apache.derby\derby\10.13.1.1\srcs\derby-sources.jar
-[warn] ==== local-preloaded: tried
-[warn]   file:/C:/Users/User/.sbt/preloaded/org/apache/derby/derby/10.13.1.1/derby-10.13.1.1-sources.jar
-[debug] 		tried C:\Users\User\.ivy2\local\org.scalikejdbc\scalikejdbc-interpolation-macro_2.12\3.1.0\srcs\scalikejdbc-interpolation-macro_2.12-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/scalikejdbc/scalikejdbc-interpolation-macro_2.12/3.1.0/scalikejdbc-interpolation-macro_2.12-3.1.0-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/scalikejdbc/scalikejdbc-interpolation_2.12/3.1.0/scalikejdbc-interpolation_2.12-3.1.0-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scalikejdbc/scalikejdbc-interpolation_2.12/3.1.0/scalikejdbc-interpolation_2.12-3.1.0-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/commons/commons-dbcp2/2.1.1/commons-dbcp2-2.1.1-sources.jar.sha1
-[info] downloading https://repo1.maven.org/maven2/org/scalikejdbc/scalikejdbc-interpolation-macro_2.12/3.1.0/scalikejdbc-interpolation-macro_2.12-3.1.0-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scalikejdbc/scalikejdbc-interpolation-macro_2.12/3.1.0/scalikejdbc-interpolation-macro_2.12-3.1.0-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.0.6/scala-parser-combinators_2.12-1.0.6-sources.jar.sha1
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/commons/commons-pool2/2.4.2/commons-pool2-2.4.2-sources.jar.sha1
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/joda/joda-convert/1.8.2/joda-convert-1.8.2-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/commons/commons-dbcp2/2.1.1/commons-dbcp2-2.1.1-sources.jar
-[info] 	[SUCCESSFUL ] org.apache.commons#commons-dbcp2;2.1.1!commons-dbcp2.jar(src) (1455ms)
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.10!scala-reflect.jar(src)
+[debug] 	[NOT REQUIRED] org.scalafx#scalafxml-core-macros-sfx8_2.12;0.4!scalafxml-core-macros-sfx8_2.12.jar(src)
+[debug] 	[NOT REQUIRED] org.scalafx#scalafxml-core-sfx8_2.12;0.4!scalafxml-core-sfx8_2.12.jar(src)
+[debug] 	[NOT REQUIRED] ch.qos.logback#logback-classic;1.2.3!logback-classic.jar(src)
+[debug] 	[NOT REQUIRED] joda-time#joda-time;2.9.9!joda-time.jar(src)
+[debug] 	[NOT REQUIRED] org.slf4j#slf4j-api;1.7.25!slf4j-api.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.commons#commons-dbcp2;2.1.1!commons-dbcp2.jar(src)
+[debug] 	[NOT REQUIRED] org.joda#joda-convert;1.8.2!joda-convert.jar(src)
+[debug] 	[NOT REQUIRED] org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0!scalikejdbc-interpolation_2.12.jar(src)
+[debug] 	[NOT REQUIRED] org.scalikejdbc#scalikejdbc-interpolation-macro_2.12;3.1.0!scalikejdbc-interpolation-macro_2.12.jar(src)
+[debug] 	[NOT REQUIRED] com.h2database#h2;1.4.196!h2.jar(src)
 [debug] 	[NOT REQUIRED] org.scalafx#scalafx_2.12;8.0.181-R13!scalafx_2.12.jar(src)
-[debug] 		tried C:\Users\User\.ivy2\local\ch.qos.logback\logback-core\1.2.3\srcs\logback-core-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scalikejdbc/scalikejdbc-interpolation-macro_2.12/3.1.0/scalikejdbc-interpolation-macro_2.12-3.1.0-sources.jar.sha1
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scalikejdbc/scalikejdbc-interpolation_2.12/3.1.0/scalikejdbc-interpolation_2.12-3.1.0-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.0.6/scala-parser-combinators_2.12-1.0.6-sources.jar
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/commons/commons-pool2/2.4.2/commons-pool2-2.4.2-sources.jar
-[info] 	[SUCCESSFUL ] org.scala-lang.modules#scala-parser-combinators_2.12;1.0.6!scala-parser-combinators_2.12.jar(src) (1627ms)
-[debug] 		tried C:\Users\User\.ivy2\local\com.h2database\h2\1.4.196\srcs\h2-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/com/h2database/h2/1.4.196/h2-1.4.196-sources.jar
-[info] 	[SUCCESSFUL ] org.apache.commons#commons-pool2;2.4.2!commons-pool2.jar(src) (1594ms)
+[debug] 	[NOT REQUIRED] ch.qos.logback#logback-core;1.2.3!logback-core.jar(src)
 [debug] 	[NOT REQUIRED] org.scalamacros#paradise_2.12.10;2.1.1!paradise_2.12.10.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(src)
-[debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.10!scala-compiler.jar(src)
 [debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.12!jansi.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.commons#commons-pool2;2.4.2!commons-pool2.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.10!scala-compiler.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.12;1.0.6!scala-parser-combinators_2.12.jar(src)
 [debug] 	[NOT REQUIRED] jline#jline;2.14.6!jline.jar(src)
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/joda/joda-convert/1.8.2/joda-convert-1.8.2-sources.jar
-[info] 	[SUCCESSFUL ] org.joda#joda-convert;1.8.2!joda-convert.jar(src) (1708ms)
-[info] downloading https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3-sources.jar
-[info] downloading https://repo1.maven.org/maven2/com/h2database/h2/1.4.196/h2-1.4.196-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/h2database/h2/1.4.196/h2-1.4.196-sources.jar
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/scalikejdbc/scalikejdbc-interpolation-macro_2.12/3.1.0/scalikejdbc-interpolation-macro_2.12-3.1.0-sources.jar
-[info] 	[SUCCESSFUL ] org.scalikejdbc#scalikejdbc-interpolation-macro_2.12;3.1.0!scalikejdbc-interpolation-macro_2.12.jar(src) (1608ms)
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/scalikejdbc/scalikejdbc-interpolation_2.12/3.1.0/scalikejdbc-interpolation_2.12-3.1.0-sources.jar
-[info] 	[SUCCESSFUL ] org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0!scalikejdbc-interpolation_2.12.jar(src) (1727ms)
-[debug] 	public: downloading https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3-sources.jar.sha1
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/h2database/h2/1.4.196/h2-1.4.196-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3-sources.jar
-[info] 	[SUCCESSFUL ] ch.qos.logback#logback-core;1.2.3!logback-core.jar(src) (2243ms)
-[debug] sha1 OK for https://repo1.maven.org/maven2/com/h2database/h2/1.4.196/h2-1.4.196-sources.jar
-[info] 	[SUCCESSFUL ] com.h2database#h2;1.4.196!h2.jar(src) (2478ms)
-[debug] :: resolution report :: resolve 307ms :: artifacts dl 6049ms
-[warn] 	::::::::::::::::::::::::::::::::::::::::::::::
-[warn] 	::              FAILED DOWNLOADS            ::
-[warn] 	:: ^ see resolution messages for details  ^ ::
-[warn] 	::::::::::::::::::::::::::::::::::::::::::::::
-[warn] 	:: org.apache.derby#derby;10.13.1.1!derby.jar(src)
-[warn] 	::::::::::::::::::::::::::::::::::::::::::::::
+[debug] :: resolution report :: resolve 617ms :: artifacts dl 9ms
 [debug] 	report for default#herocreator$sources;0.1 compile produced in D:\Projects\HeroCreator\target\scala-2.12\resolution-cache\reports\default-herocreator$sources-compile.xml
 [debug] 	report for default#herocreator$sources;0.1 runtime produced in D:\Projects\HeroCreator\target\scala-2.12\resolution-cache\reports\default-herocreator$sources-runtime.xml
 [debug] 	report for default#herocreator$sources;0.1 test produced in D:\Projects\HeroCreator\target\scala-2.12\resolution-cache\reports\default-herocreator$sources-test.xml
@@ -3289,4 +3004,4 @@
 [debug] 	report for default#herocreator$sources;0.1 plugin produced in D:\Projects\HeroCreator\target\scala-2.12\resolution-cache\reports\default-herocreator$sources-plugin.xml
 [debug] 	report for default#herocreator$sources;0.1 pom produced in D:\Projects\HeroCreator\target\scala-2.12\resolution-cache\reports\default-herocreator$sources-pom.xml
 [debug] 	report for default#herocreator$sources;0.1 scala-tool produced in D:\Projects\HeroCreator\target\scala-2.12\resolution-cache\reports\default-herocreator$sources-scala-tool.xml
-[debug] 	resolve done (307ms resolve - 6049ms download)
+[debug] 	resolve done (617ms resolve - 9ms download)

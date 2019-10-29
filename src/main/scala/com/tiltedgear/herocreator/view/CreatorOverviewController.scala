@@ -8,17 +8,19 @@ import scalafxml.core.macros.sfxml
 import scalafx.event.ActionEvent
 import scalafx.Includes._
 
+
+@sfxml
 class CreatorOverviewController(
   private val heroNameField : TextField,
-  private val heroRoleField : ComboBox.type ,
-  private val heroAffiliationField : ComboBox.type,
+  private val heroRoleField : ComboBox[String],
+  private val heroAffiliationField : ComboBox[String],
   private val heroLoreField : TextArea,
   private val heroOccupationField : TextField,
-  private val heroNationalityField : ComboBox.type,
+  private val heroNationalityField : ComboBox[String],
   private val heroHPField : TextField,
   private val heroArmourField : TextField,
   private val heroSpeedField : TextField,
-  private val heroBaseDamageIField : TextField
+  private val heroBaseDamageField : TextField
 ) {
 
   var         dialogStage : Stage  = null
@@ -30,15 +32,15 @@ class CreatorOverviewController(
     _hero = x
 
     heroNameField.text = _hero.heroName.value
-//    heroRoleField.text = _hero.heroRole.value
-//    heroAffiliationField.text = _hero.heroAffiliation.value
+    heroRoleField.selectionModel().select(hero.heroRole.value)
+    heroAffiliationField.selectionModel().select(hero.heroAffiliation.value)
     heroLoreField.text = _hero.heroLore.value
     heroOccupationField.text = _hero.heroOccupation.value
-//    heroNationalityField.text = _hero.heroNationality.value
+    heroNationalityField.selectionModel().select(hero.heroNationality.value)
     heroHPField.text = _hero.heroHealth.value.toString
     heroArmourField.text = _hero.heroArmour.value.toString
     heroSpeedField.text = _hero.heroSpeed.value.toString
-    heroBaseDamageIField.text = _hero.heroBaseDamage.value.toString
+    heroBaseDamageField.text = _hero.heroBaseDamage.value.toString
   }
 
   def handleOk(action :ActionEvent){

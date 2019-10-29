@@ -207,7 +207,4 @@
       </TabPane>
       <Button fx:id="exitButton" mnemonicParsing="false" onAction="#handleApplicationExit" styleClass="exit-button" text="X" textFill="WHITE" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
    </children>
-   <stylesheets>
-      <URL value="@stylesheet.css" />
-   </stylesheets>
 </AnchorPane>

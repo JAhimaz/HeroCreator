@@ -4,8 +4,6 @@ version := "0.1"
 
 scalaVersion := "2.12.10"
 
-offline := true
-
 resolvers += "Local Maven Repository" at "file:///"+Path.userHome+ "/.ivy2/cache"
 
 unmanagedJars in Compile += Attributed.blank(file(System.getenv("JAVA_HOME") + "/jre/lib/ext/jfxrt.jar"))
