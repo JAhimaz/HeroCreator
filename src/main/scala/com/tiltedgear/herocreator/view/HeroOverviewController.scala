@@ -4,12 +4,31 @@ import com.tiltedgear.herocreator.model.Hero
 import scalafx.scene.control.Button
 import scalafxml.core.macros.sfxml
 import com.tiltedgear.herocreator.HeroApp
+import javafx.fxml.FXML
 import scalafx.Includes._
 import scalafx.application.Platform
 import scalafx.event.ActionEvent
+import scalafx.scene.control.{Label, TableColumn, TableView}
+import scalafx.beans.property.StringProperty
 
 @sfxml
-class HeroOverviewController {
+class HeroOverviewController(
+  private val heroTable: TableView[Hero],
+  private val heroNameColumn : TableColumn[Hero, String],
+  private val heroNameLabel : Label,
+  private val heroRoleLabel : Label,
+  private val heroAffiliationLabel : Label,
+  private val heroLoreLabel : Label,
+  private val heroOccupationLabel : Label,
+  private val heroNationalityLabel : Label,
+  private val heroHealthLabel : Label,
+  private val heroArmourLabel : Label,
+  private val heroSpeedLabel : Label,
+  private val heroBaseDamageLabel : Label
+) {
+
+  heroTable.items = HeroApp.heroData
+  heroNameColumn.cellValueFactory = {_.value.heroName}
 
   def handleApplicationExit(action: ActionEvent) = {
     Platform.exit();

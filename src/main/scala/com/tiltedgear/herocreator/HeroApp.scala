@@ -16,7 +16,7 @@ import scalafx.stage.{Modality, Stage, StageStyle}
 
 object HeroApp extends JFXApp {
 
-  Database.setupDB()
+//  Database.setupDB()
 
   val resource = getClass.getResource("view/HeroOverview.fxml")
   val loader = new FXMLLoader(resource, NoDependencyResolver)
@@ -32,6 +32,18 @@ object HeroApp extends JFXApp {
       scene = new Scene{
         root = roots
       }
+  }
+
+  val heroData = new ObservableBuffer[Hero]()
+
+  /*Hardcoded Data*/
+  heroData += new Hero("Mei", "Damage", "Chinese Federation", "Lorem Ipsum", "Social Worker", "Chinese", 100, 250, 50, 75)
+  heroData += new Hero("John", "Damage", "Chinese Federation", "Lorem Ipsum", "Social Worker", "Chinese", 100, 250, 50, 75)
+  heroData += new Hero("Timmy", "Damage", "Chinese Federation", "Lorem Ipsum", "Social Worker", "Chinese", 100, 250, 50, 75)
+  heroData += new Hero("Nword", "Damage", "Chinese Federation", "Lorem Ipsum", "Social Worker", "Chinese", 100, 250, 50, 75)
+
+  for(i <- heroData){
+    println(i.heroName)
   }
 
   def showCreatorOverview(hero: Hero) = {
