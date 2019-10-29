@@ -16,7 +16,14 @@ import scalafx.stage.{Modality, Stage, StageStyle}
 
 object HeroApp extends JFXApp {
 
-//  Database.setupDB()
+  Database.setupDB()
+  val heroData = new ObservableBuffer[Hero]()
+
+  /*Hardcoded Data*/
+  heroData += new Hero("Mei", "Damage", "Chinese Federation", "Lorem Ipsum", "Social Worker", "Chinese", 100, 250, 50, 75)
+  heroData += new Hero("John", "Damage", "Chinese Federation", "Lorem Ipsum", "Social Worker", "Chinese", 100, 250, 50, 75)
+  heroData += new Hero("Timmy", "Damage", "Chinese Federation", "Lorem Ipsum", "Social Worker", "Chinese", 100, 250, 50, 75)
+  heroData += new Hero("Test", "Damage", "Chinese Federation", "Lorem Ipsum", "Social Worker", "Chinese", 100, 250, 50, 75)
 
   val resource = getClass.getResource("view/HeroOverview.fxml")
   val loader = new FXMLLoader(resource, NoDependencyResolver)
@@ -34,17 +41,7 @@ object HeroApp extends JFXApp {
       }
   }
 
-  val heroData = new ObservableBuffer[Hero]()
-
-  /*Hardcoded Data*/
-  heroData += new Hero("Mei", "Damage", "Chinese Federation", "Lorem Ipsum", "Social Worker", "Chinese", 100, 250, 50, 75)
-  heroData += new Hero("John", "Damage", "Chinese Federation", "Lorem Ipsum", "Social Worker", "Chinese", 100, 250, 50, 75)
-  heroData += new Hero("Timmy", "Damage", "Chinese Federation", "Lorem Ipsum", "Social Worker", "Chinese", 100, 250, 50, 75)
-  heroData += new Hero("Nword", "Damage", "Chinese Federation", "Lorem Ipsum", "Social Worker", "Chinese", 100, 250, 50, 75)
-
-  for(i <- heroData){
-    println(i.heroName)
-  }
+  stage.initStyle(StageStyle.Undecorated)
 
   def showCreatorOverview(hero: Hero) = {
     val resource = getClass.getResourceAsStream("view/CreatorOverview.fxml")
@@ -52,7 +49,7 @@ object HeroApp extends JFXApp {
     loader.load(resource)
 
     val roots2 = loader.getRoot[jfxs.layout.AnchorPane]
-    val control = loader.getController[CreatorOverviewController]()
+    val control2 = loader.getController[CreatorOverviewController#Controller]()
     roots2.stylesheets = List(cssResource.toExternalForm)
     val dialog = new Stage() {
       initModality(Modality.ApplicationModal)
@@ -61,11 +58,14 @@ object HeroApp extends JFXApp {
         root = roots2
       }
     }
-    control.dialogStage = dialog
-    control.hero = hero
+
+    dialog.initStyle(StageStyle.Undecorated)
+
+    control2.dialogStage = dialog
+    control2.hero = hero
     dialog.showAndWait()
-    control.okClicked
+    control2.okClicked
   }
 
-  stage.initStyle(StageStyle.Undecorated)
+
 }

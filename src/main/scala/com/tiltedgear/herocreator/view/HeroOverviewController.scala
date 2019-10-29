@@ -27,7 +27,7 @@ class HeroOverviewController(
   private val heroBaseDamageLabel : Label
 ) {
 
-  heroTable.items = HeroApp.heroData
+    heroTable.items = HeroApp.heroData
   heroNameColumn.cellValueFactory = {_.value.heroName}
 
   def handleApplicationExit(action: ActionEvent) = {

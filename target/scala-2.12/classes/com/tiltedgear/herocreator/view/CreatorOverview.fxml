@@ -16,17 +16,17 @@
                      <children>
                         <Pane prefHeight="200.0" prefWidth="200.0" styleClass="inner-pane" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
                            <children>
-                              <TextArea layoutX="27.0" layoutY="188.0" prefHeight="132.0" prefWidth="250.0" styleClass="dropshadow-general" />
-                              <TextField layoutX="27.0" layoutY="47.0" prefHeight="27.0" prefWidth="250.0" styleClass="dropshadow-general" />
+                              <TextArea fx:id="heroLoreField" layoutX="27.0" layoutY="188.0" prefHeight="132.0" prefWidth="250.0" styleClass="dropshadow-general" />
+                              <TextField fx:id="heroNameField" layoutX="27.0" layoutY="47.0" prefHeight="27.0" prefWidth="250.0" styleClass="dropshadow-general" />
                               <Label layoutX="27.0" layoutY="24.0" text="Hero Name" textFill="WHITE" />
-                              <ComboBox layoutX="27.0" layoutY="117.0" prefHeight="27.0" prefWidth="112.0" styleClass="dropshadow-general" />
+                              <ComboBox fx:id="heroRoleField" layoutX="27.0" layoutY="117.0" prefHeight="27.0" prefWidth="112.0" styleClass="dropshadow-general" />
                               <Label layoutX="27.0" layoutY="94.0" text="Hero Role" textFill="WHITE" />
                               <Label layoutX="27.0" layoutY="165.0" text="Hero Description/Lore" textFill="WHITE" />
                               <Label layoutX="165.0" layoutY="92.0" text="Affiliation" textFill="WHITE" />
-                              <ComboBox layoutX="165.0" layoutY="115.0" prefHeight="27.0" prefWidth="112.0" styleClass="dropshadow-general" />
+                              <ComboBox fx:id="heroAffiliationField" layoutX="165.0" layoutY="115.0" prefHeight="27.0" prefWidth="112.0" styleClass="dropshadow-general" />
                               <Label layoutX="27.0" layoutY="340.0" text="Hero Previous/Current Occupation" textFill="WHITE" />
-                              <TextField layoutX="27.0" layoutY="363.0" prefHeight="27.0" prefWidth="250.0" styleClass="dropshadow-general" />
-                              <ComboBox layoutX="304.0" layoutY="45.0" prefHeight="27.0" prefWidth="112.0" styleClass="dropshadow-general" />
+                              <TextField fx:id="heroOccupationField" layoutX="27.0" layoutY="363.0" prefHeight="27.0" prefWidth="250.0" styleClass="dropshadow-general" />
+                              <ComboBox fx:id="heroNationalityField" layoutX="304.0" layoutY="45.0" prefHeight="27.0" prefWidth="112.0" styleClass="dropshadow-general" />
                               <Label layoutX="304.0" layoutY="22.0" text="Nationality" textFill="WHITE" />
                               <GridPane layoutX="304.0" layoutY="115.0" prefHeight="123.0" prefWidth="237.0" styleClass="dropshadow-general">
                                  <children>
@@ -34,10 +34,10 @@
                                     <Label text="Armour" textFill="WHITE" GridPane.rowIndex="1" />
                                     <Label text="Speed" textFill="WHITE" GridPane.rowIndex="2" />
                                     <Label text="Base Damage" textFill="WHITE" GridPane.rowIndex="3" />
-                                    <TextField prefHeight="27.0" prefWidth="250.0" styleClass="dropshadow-general" GridPane.columnIndex="1" />
-                                    <TextField prefHeight="27.0" prefWidth="250.0" styleClass="dropshadow-general" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                                    <TextField prefHeight="27.0" prefWidth="250.0" styleClass="dropshadow-general" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                                    <TextField prefHeight="27.0" prefWidth="250.0" styleClass="dropshadow-general" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                    <TextField fx:id="heroHPField" prefHeight="27.0" prefWidth="250.0" styleClass="dropshadow-general" GridPane.columnIndex="1" />
+                                    <TextField fx:id="heroArmourField" prefHeight="27.0" prefWidth="250.0" styleClass="dropshadow-general" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <TextField fx:id="heroSpeedField" prefHeight="27.0" prefWidth="250.0" styleClass="dropshadow-general" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <TextField fx:id="heroBaseDamageField" prefHeight="27.0" prefWidth="250.0" styleClass="dropshadow-general" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                                  </children>
                                  <columnConstraints>
                                     <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -51,7 +51,7 @@
                                  </rowConstraints>
                               </GridPane>
                               <Label layoutX="304.0" layoutY="92.0" text="Hero Stats" textFill="WHITE" />
-                              <Button layoutX="14.0" layoutY="495.0" mnemonicParsing="false" styleClass="exit-button" text="Cancel" textFill="WHITE" />
+                              <Button layoutX="14.0" layoutY="495.0" mnemonicParsing="false" onAction="#handleCancel" styleClass="exit-button" text="Cancel" textFill="WHITE" />
                               <Button layoutX="528.0" layoutY="496.0" mnemonicParsing="false" styleClass="create-button" text="✓" />
                            </children>
                            <effect>
@@ -66,6 +66,6 @@
       </TabPane>
    </children>
    <stylesheets>
-      <URL value="@stylesheet.css" />
+      <String fx:value="@stylesheet.css" /> <!--Temporary, Remove After-->
    </stylesheets>
 </AnchorPane>
