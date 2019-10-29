@@ -16,7 +16,7 @@ class CreatorOverviewController(
   private val heroAffiliationField : ComboBox[String],
   private val heroLoreField : TextArea,
   private val heroOccupationField : TextField,
-  private val heroNationalityField : ComboBox[String],
+  private val heroRaceField : ComboBox[String],
   private val heroHPField : TextField,
   private val heroArmourField : TextField,
   private val heroSpeedField : TextField,
@@ -36,7 +36,7 @@ class CreatorOverviewController(
     heroAffiliationField.selectionModel().select(hero.heroAffiliation.value)
     heroLoreField.text = _hero.heroLore.value
     heroOccupationField.text = _hero.heroOccupation.value
-    heroNationalityField.selectionModel().select(hero.heroNationality.value)
+    heroRaceField.selectionModel().select(hero.heroRace.value)
     heroHPField.text = _hero.heroHealth.value.toString
     heroArmourField.text = _hero.heroArmour.value.toString
     heroSpeedField.text = _hero.heroSpeed.value.toString

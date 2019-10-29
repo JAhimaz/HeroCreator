@@ -26,8 +26,8 @@
                               <ComboBox fx:id="heroAffiliationField" layoutX="165.0" layoutY="115.0" prefHeight="27.0" prefWidth="112.0" styleClass="dropshadow-general" />
                               <Label layoutX="27.0" layoutY="340.0" text="Hero Previous/Current Occupation" textFill="WHITE" />
                               <TextField fx:id="heroOccupationField" layoutX="27.0" layoutY="363.0" prefHeight="27.0" prefWidth="250.0" styleClass="dropshadow-general" />
-                              <ComboBox fx:id="heroNationalityField" layoutX="304.0" layoutY="45.0" prefHeight="27.0" prefWidth="112.0" styleClass="dropshadow-general" />
-                              <Label layoutX="304.0" layoutY="22.0" text="Nationality" textFill="WHITE" />
+                              <ComboBox fx:id="heroRaceField" layoutX="304.0" layoutY="45.0" prefHeight="27.0" prefWidth="112.0" styleClass="dropshadow-general" />
+                              <Label layoutX="304.0" layoutY="22.0" text="Race" textFill="WHITE" />
                               <GridPane layoutX="304.0" layoutY="115.0" prefHeight="123.0" prefWidth="237.0" styleClass="dropshadow-general">
                                  <children>
                                     <Label text="Health" textFill="WHITE" />
