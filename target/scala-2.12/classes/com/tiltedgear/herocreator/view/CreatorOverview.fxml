@@ -27,7 +27,7 @@
                               <Label layoutX="27.0" layoutY="340.0" text="Hero Previous/Current Occupation" textFill="WHITE" />
                               <TextField fx:id="heroOccupationField" layoutX="27.0" layoutY="363.0" prefHeight="27.0" prefWidth="250.0" styleClass="dropshadow-general" />
                               <ComboBox fx:id="heroRaceField" layoutX="304.0" layoutY="45.0" prefHeight="27.0" prefWidth="112.0" styleClass="dropshadow-general" />
-                              <Label layoutX="304.0" layoutY="22.0" text="Race" textFill="WHITE" />
+                              <Label layoutX="304.0" layoutY="22.0" text="Nationality" textFill="WHITE" />
                               <GridPane layoutX="304.0" layoutY="115.0" prefHeight="123.0" prefWidth="237.0" styleClass="dropshadow-general">
                                  <children>
                                     <Label text="Health" textFill="WHITE" />
@@ -51,8 +51,8 @@
                                  </rowConstraints>
                               </GridPane>
                               <Label layoutX="304.0" layoutY="92.0" text="Hero Stats" textFill="WHITE" />
-                              <Button layoutX="14.0" layoutY="495.0" mnemonicParsing="false" onAction="#handleCancel" styleClass="exit-button" text="Cancel" textFill="WHITE" />
-                              <Button layoutX="528.0" layoutY="496.0" mnemonicParsing="false" styleClass="create-button" text="✓" />
+                              <Button layoutX="14.0" layoutY="495.0" mnemonicParsing="false" onAction="#handleCancel" style="-fx-text-fill: black;" styleClass="exit-button" text="Cancel" textFill="WHITE" />
+                              <Button layoutX="528.0" layoutY="496.0" mnemonicParsing="false" onAction="#handleOk" styleClass="create-button" text="✓" />
                            </children>
                            <effect>
                               <InnerShadow />
@@ -64,6 +64,7 @@
             </Tab>
          </tabs>
       </TabPane>
+      <Button fx:id="exitButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleCancel" styleClass="exit-button" text="X" textFill="WHITE" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
    </children>
    <stylesheets>
       <String fx:value="@stylesheet.css" /> <!--Temporary, Remove After-->

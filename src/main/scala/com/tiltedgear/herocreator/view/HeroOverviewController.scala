@@ -1,15 +1,16 @@
 package com.tiltedgear.herocreator.view
 
 import com.tiltedgear.herocreator.model.Hero
-import scalafx.scene.control.Button
+import scalafx.scene.control.{Alert, Button, Label, TableColumn, TableView}
 import scalafxml.core.macros.sfxml
 import com.tiltedgear.herocreator.HeroApp
 import javafx.fxml.FXML
 import scalafx.Includes._
 import scalafx.application.Platform
 import scalafx.event.ActionEvent
-import scalafx.scene.control.{Label, TableColumn, TableView}
 import scalafx.beans.property.StringProperty
+
+import scala.util.{Failure, Success}
 
 @sfxml
 class HeroOverviewController(
@@ -40,18 +41,18 @@ class HeroOverviewController(
       "", "", "", "", "", "",
       100,100,5,25)
     val okClicked = HeroApp.showCreatorOverview(hero);
-/*    if (okClicked) {
+    if (okClicked) {
       hero.save() match {
         case Success(x) =>
-          MainApp.heroData += person
+          HeroApp.heroData += hero
         case Failure(e) =>
           val alert = new Alert(Alert.AlertType.Warning) {
-            initOwner(MainApp.stage)
+            initOwner(HeroApp.stage)
             title = "Failed to Save"
             headerText = "Database Error"
             contentText = "Database problem filed to save changes"
           }.showAndWait()
       }
-    }*/
+    }
   }
 }

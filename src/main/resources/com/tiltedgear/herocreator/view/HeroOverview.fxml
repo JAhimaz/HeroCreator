@@ -194,7 +194,7 @@
                         </SplitPane>
                         <HBox layoutX="407.0" layoutY="512.0" spacing="10.0" AnchorPane.bottomAnchor="13.0" AnchorPane.rightAnchor="10.0">
                            <children>
-                              <Button fx:id="createButton2" layoutX="412.0" layoutY="516.0" mnemonicParsing="false" styleClass="exit-button" text="Delete" AnchorPane.bottomAnchor="14.0" />
+                              <Button fx:id="createButton2" layoutX="412.0" layoutY="516.0" mnemonicParsing="false" style="-fx-text-fill: black;" styleClass="exit-button" text="Delete" AnchorPane.bottomAnchor="14.0" />
                               <Button fx:id="createButton1" layoutX="475.0" layoutY="516.0" mnemonicParsing="false" styleClass="edit-button" text="Edit..." AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="71.0" />
                               <Button fx:id="createButton" layoutX="529.0" layoutY="516.0" mnemonicParsing="false" onAction="#handleNewHero" styleClass="create-button" text="Create" />
                            </children>

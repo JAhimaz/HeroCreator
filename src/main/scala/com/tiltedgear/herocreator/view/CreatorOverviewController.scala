@@ -45,28 +45,32 @@ class CreatorOverviewController(
 
   def handleOk(action :ActionEvent){
 
-/*    if (isInputValid()) {
-      _person.firstName <== firstNameField.text
-      _person.lastName  <== lastNameField.text
-      _person.street    <== streetField.text
-      _person.city      <== cityField.text
-      _person.postalCode.value = postalCodeField.getText().toInt
-      _person.date.value       = birthdayField.text.value.parseLocalDate;
+    if (isInputValid()) {
+      _hero.heroName <== heroNameField.text
+      //_hero.heroRole <==
+      //_hero.heroAffiliation <==
+      _hero.heroLore <== heroLoreField.text
+      _hero.heroOccupation <== heroOccupationField.text
+      //_hero.heroRace <==
+      _hero.heroHealth <== heroHPField.getText().toInt
+      _hero.heroArmour <== heroArmourField.getText().toInt
+      _hero.heroSpeed <== heroSpeedField.getText().toInt
+      _hero.heroBaseDamage <== heroBaseDamageField.getText().toInt
 
       okClicked = true;
       dialogStage.close()
-    }*/
-    okClicked = true //Temporary
+    }
   }
 
   def handleCancel(action :ActionEvent) {
     dialogStage.close();
   }
 
-/*  def nullChecking (x : String) = x == null || x.length == 0*/
+  def nullChecking (x : String) = x == null || x.length == 0
 
- /* def isInputValid() : Boolean = {
-    var errorMessage = ""
+  def isInputValid() : Boolean = {
+    return true;
+/*    var errorMessage = ""
 
     if (nullChecking(firstNameField.text.value))
       errorMessage += "No valid first name!\n"
@@ -106,6 +110,6 @@ class CreatorOverviewController(
       }.showAndWait()
 
       return false;
-    }
-  }*/
+    }*/
+  }
 }

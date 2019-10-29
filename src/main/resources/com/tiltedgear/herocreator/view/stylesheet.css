@@ -29,6 +29,14 @@
     -fx-text-fill: black;
 }
 
+.create-button:hover {
+    -fx-background-color:
+      transparent,
+      transparent,
+      linear-gradient(#558204, #558204),
+      linear-gradient(#558204, #72992b);
+}
+
 .edit-button {
     -fx-background-color:
         linear-gradient(#f08f3a, #f0ad3a),
@@ -39,6 +47,14 @@
     -fx-text-fill: black;
 }
 
+.edit-button:hover  {
+    -fx-background-color:
+      transparent,
+      transparent,
+      linear-gradient(#e09e2b, #e09e2b),
+      linear-gradient(#e09e2b, #db9214);
+}
+
 .exit-button {
     -fx-background-color:
         linear-gradient(#ff1717, #a12020),
@@ -46,7 +62,7 @@
     -fx-background-radius: 6, 5;
     -fx-background-insets: 0, 1;
     -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
-    -fx-text-fill: black;
+    -fx-text-fill: white;
 }
 
 .exit-button:hover {
