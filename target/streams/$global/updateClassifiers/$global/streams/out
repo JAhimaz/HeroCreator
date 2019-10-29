@@ -2969,39 +2969,39 @@
 [debug] 	resolved ivy file produced in cache
 [debug] :: downloading artifacts ::
 [debug] 	[NOT REQUIRED] org.scalikejdbc#scalikejdbc-core_2.12;3.1.0!scalikejdbc-core_2.12.jar(src)
-[debug] 	[NOT REQUIRED] org.scalikejdbc#scalikejdbc_2.12;3.1.0!scalikejdbc_2.12.jar(src)
 [debug] 	[NOT REQUIRED] commons-logging#commons-logging;1.2!commons-logging.jar(src)
+[debug] 	[NOT REQUIRED] org.scalikejdbc#scalikejdbc_2.12;3.1.0!scalikejdbc_2.12.jar(src)
+[debug] 	[NOT REQUIRED] org.scalafx#scalafxml-core-sfx8_2.12;0.4!scalafxml-core-sfx8_2.12.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.12.10!scala-library.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.10!scala-reflect.jar(src)
 [debug] 	[NOT REQUIRED] org.scalafx#scalafxml-core-macros-sfx8_2.12;0.4!scalafxml-core-macros-sfx8_2.12.jar(src)
-[debug] 	[NOT REQUIRED] org.scalafx#scalafxml-core-sfx8_2.12;0.4!scalafxml-core-sfx8_2.12.jar(src)
 [debug] 	[NOT REQUIRED] ch.qos.logback#logback-classic;1.2.3!logback-classic.jar(src)
-[debug] 	[NOT REQUIRED] joda-time#joda-time;2.9.9!joda-time.jar(src)
 [debug] 	[NOT REQUIRED] org.slf4j#slf4j-api;1.7.25!slf4j-api.jar(src)
+[debug] 	[NOT REQUIRED] joda-time#joda-time;2.9.9!joda-time.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.commons#commons-dbcp2;2.1.1!commons-dbcp2.jar(src)
 [debug] 	[NOT REQUIRED] org.joda#joda-convert;1.8.2!joda-convert.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.12;1.0.6!scala-parser-combinators_2.12.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.commons#commons-pool2;2.4.2!commons-pool2.jar(src)
 [debug] 	[NOT REQUIRED] org.scalikejdbc#scalikejdbc-interpolation_2.12;3.1.0!scalikejdbc-interpolation_2.12.jar(src)
-[debug] 	[NOT REQUIRED] org.scalikejdbc#scalikejdbc-interpolation-macro_2.12;3.1.0!scalikejdbc-interpolation-macro_2.12.jar(src)
-[debug] 	[NOT REQUIRED] com.h2database#h2;1.4.196!h2.jar(src)
 [debug] 	[NOT REQUIRED] org.scalafx#scalafx_2.12;8.0.181-R13!scalafx_2.12.jar(src)
 [debug] 	[NOT REQUIRED] ch.qos.logback#logback-core;1.2.3!logback-core.jar(src)
+[debug] 	[NOT REQUIRED] org.scalikejdbc#scalikejdbc-interpolation-macro_2.12;3.1.0!scalikejdbc-interpolation-macro_2.12.jar(src)
+[debug] 	[NOT REQUIRED] com.h2database#h2;1.4.196!h2.jar(src)
 [debug] 	[NOT REQUIRED] org.scalamacros#paradise_2.12.10;2.1.1!paradise_2.12.10.jar(src)
-[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(src)
 [debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.12!jansi.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.commons#commons-pool2;2.4.2!commons-pool2.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.10!scala-compiler.jar(src)
-[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.12;1.0.6!scala-parser-combinators_2.12.jar(src)
 [debug] 	[NOT REQUIRED] jline#jline;2.14.6!jline.jar(src)
-[debug] :: resolution report :: resolve 617ms :: artifacts dl 9ms
-[debug] 	report for default#herocreator$sources;0.1 compile produced in D:\Projects\HeroCreator\target\scala-2.12\resolution-cache\reports\default-herocreator$sources-compile.xml
-[debug] 	report for default#herocreator$sources;0.1 runtime produced in D:\Projects\HeroCreator\target\scala-2.12\resolution-cache\reports\default-herocreator$sources-runtime.xml
-[debug] 	report for default#herocreator$sources;0.1 test produced in D:\Projects\HeroCreator\target\scala-2.12\resolution-cache\reports\default-herocreator$sources-test.xml
-[debug] 	report for default#herocreator$sources;0.1 provided produced in D:\Projects\HeroCreator\target\scala-2.12\resolution-cache\reports\default-herocreator$sources-provided.xml
-[debug] 	report for default#herocreator$sources;0.1 optional produced in D:\Projects\HeroCreator\target\scala-2.12\resolution-cache\reports\default-herocreator$sources-optional.xml
-[debug] 	report for default#herocreator$sources;0.1 compile-internal produced in D:\Projects\HeroCreator\target\scala-2.12\resolution-cache\reports\default-herocreator$sources-compile-internal.xml
-[debug] 	report for default#herocreator$sources;0.1 runtime-internal produced in D:\Projects\HeroCreator\target\scala-2.12\resolution-cache\reports\default-herocreator$sources-runtime-internal.xml
-[debug] 	report for default#herocreator$sources;0.1 test-internal produced in D:\Projects\HeroCreator\target\scala-2.12\resolution-cache\reports\default-herocreator$sources-test-internal.xml
-[debug] 	report for default#herocreator$sources;0.1 plugin produced in D:\Projects\HeroCreator\target\scala-2.12\resolution-cache\reports\default-herocreator$sources-plugin.xml
-[debug] 	report for default#herocreator$sources;0.1 pom produced in D:\Projects\HeroCreator\target\scala-2.12\resolution-cache\reports\default-herocreator$sources-pom.xml
-[debug] 	report for default#herocreator$sources;0.1 scala-tool produced in D:\Projects\HeroCreator\target\scala-2.12\resolution-cache\reports\default-herocreator$sources-scala-tool.xml
-[debug] 	resolve done (617ms resolve - 9ms download)
+[debug] :: resolution report :: resolve 142ms :: artifacts dl 7ms
+[debug] 	report for default#herocreator$sources;0.1 compile produced in C:\Users\xxx\Desktop\BCS\Year 2\Sem 4\Object Oriented Programming\GitHub\Assignment\HeroCreator\target\scala-2.12\resolution-cache\reports\default-herocreator$sources-compile.xml
+[debug] 	report for default#herocreator$sources;0.1 runtime produced in C:\Users\xxx\Desktop\BCS\Year 2\Sem 4\Object Oriented Programming\GitHub\Assignment\HeroCreator\target\scala-2.12\resolution-cache\reports\default-herocreator$sources-runtime.xml
+[debug] 	report for default#herocreator$sources;0.1 test produced in C:\Users\xxx\Desktop\BCS\Year 2\Sem 4\Object Oriented Programming\GitHub\Assignment\HeroCreator\target\scala-2.12\resolution-cache\reports\default-herocreator$sources-test.xml
+[debug] 	report for default#herocreator$sources;0.1 provided produced in C:\Users\xxx\Desktop\BCS\Year 2\Sem 4\Object Oriented Programming\GitHub\Assignment\HeroCreator\target\scala-2.12\resolution-cache\reports\default-herocreator$sources-provided.xml
+[debug] 	report for default#herocreator$sources;0.1 optional produced in C:\Users\xxx\Desktop\BCS\Year 2\Sem 4\Object Oriented Programming\GitHub\Assignment\HeroCreator\target\scala-2.12\resolution-cache\reports\default-herocreator$sources-optional.xml
+[debug] 	report for default#herocreator$sources;0.1 compile-internal produced in C:\Users\xxx\Desktop\BCS\Year 2\Sem 4\Object Oriented Programming\GitHub\Assignment\HeroCreator\target\scala-2.12\resolution-cache\reports\default-herocreator$sources-compile-internal.xml
+[debug] 	report for default#herocreator$sources;0.1 runtime-internal produced in C:\Users\xxx\Desktop\BCS\Year 2\Sem 4\Object Oriented Programming\GitHub\Assignment\HeroCreator\target\scala-2.12\resolution-cache\reports\default-herocreator$sources-runtime-internal.xml
+[debug] 	report for default#herocreator$sources;0.1 test-internal produced in C:\Users\xxx\Desktop\BCS\Year 2\Sem 4\Object Oriented Programming\GitHub\Assignment\HeroCreator\target\scala-2.12\resolution-cache\reports\default-herocreator$sources-test-internal.xml
+[debug] 	report for default#herocreator$sources;0.1 plugin produced in C:\Users\xxx\Desktop\BCS\Year 2\Sem 4\Object Oriented Programming\GitHub\Assignment\HeroCreator\target\scala-2.12\resolution-cache\reports\default-herocreator$sources-plugin.xml
+[debug] 	report for default#herocreator$sources;0.1 pom produced in C:\Users\xxx\Desktop\BCS\Year 2\Sem 4\Object Oriented Programming\GitHub\Assignment\HeroCreator\target\scala-2.12\resolution-cache\reports\default-herocreator$sources-pom.xml
+[debug] 	report for default#herocreator$sources;0.1 scala-tool produced in C:\Users\xxx\Desktop\BCS\Year 2\Sem 4\Object Oriented Programming\GitHub\Assignment\HeroCreator\target\scala-2.12\resolution-cache\reports\default-herocreator$sources-scala-tool.xml
+[debug] 	resolve done (142ms resolve - 7ms download)
