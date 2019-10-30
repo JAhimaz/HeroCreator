@@ -1,6 +1,4 @@
-package com.tiltedgear.herocreator.util
-
-import scala.util.Random
+package com.tiltedgear.herocreator.util.factory
 
 import scala.util.Random
 

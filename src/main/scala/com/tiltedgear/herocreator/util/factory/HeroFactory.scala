@@ -1,8 +1,9 @@
-package com.tiltedgear.herocreator.util
+package com.tiltedgear.herocreator.util.factory
+
 import com.tiltedgear.herocreator.HeroApp
 import com.tiltedgear.herocreator.model.Hero
+
 import scala.util.Random
-import com.tiltedgear.herocreator.util.LoremIpsum
 
 object HeroFactory {
   val rand = scala.util.Random
