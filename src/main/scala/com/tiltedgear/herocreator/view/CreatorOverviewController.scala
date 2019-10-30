@@ -2,7 +2,7 @@ package com.tiltedgear.herocreator.view
 
 import com.tiltedgear.herocreator.model.Hero
 import com.tiltedgear.herocreator.HeroApp
-import scalafx.scene.control.{ComboBox, TextArea, TextField}
+import scalafx.scene.control.{Alert, ComboBox, TextArea, TextField}
 import scalafx.stage.Stage
 import scalafxml.core.macros.sfxml
 import scalafx.event.ActionEvent
@@ -22,6 +22,13 @@ class CreatorOverviewController(
   private val heroSpeedField : TextField,
   private val heroBaseDamageField : TextField
 ) {
+
+  heroRaceField += "Undead"
+  heroRaceField += "Night Elf"
+  heroRaceField += "Human"
+  heroRaceField += "Orc"
+
+  heroRaceField.getSelectionModel.selectFirst()
 
   var         dialogStage : Stage  = null
   private var _hero : Hero = null
@@ -44,14 +51,13 @@ class CreatorOverviewController(
   }
 
   def handleOk(action :ActionEvent){
-
     if (isInputValid()) {
       _hero.heroName <== heroNameField.text
-      //_hero.heroRole <==
-      //_hero.heroAffiliation <==
+      _hero.heroRole <== heroRoleField.getSelectionModel.selectedItemProperty
+      _hero.heroAffiliation <== heroAffiliationField.getSelectionModel.selectedItemProperty
       _hero.heroLore <== heroLoreField.text
       _hero.heroOccupation <== heroOccupationField.text
-      //_hero.heroRace <==
+      _hero.heroRace <== heroRaceField.getSelectionModel.selectedItemProperty
       _hero.heroHealth <== heroHPField.getText().toInt
       _hero.heroArmour <== heroArmourField.getText().toInt
       _hero.heroSpeed <== heroSpeedField.getText().toInt
@@ -69,32 +75,60 @@ class CreatorOverviewController(
   def nullChecking (x : String) = x == null || x.length == 0
 
   def isInputValid() : Boolean = {
-    return true;
-/*    var errorMessage = ""
+    var errorMessage = ""
 
-    if (nullChecking(firstNameField.text.value))
-      errorMessage += "No valid first name!\n"
-    if (nullChecking(lastNameField.text.value))
-      errorMessage += "No valid last name!\n"
-    if (nullChecking(streetField.text.value))
-      errorMessage += "No valid street!\n"
-    if (nullChecking(postalCodeField.text.value))
-      errorMessage += "No valid postal code!\n"
+    if (nullChecking(heroNameField.text.value))
+      errorMessage += "Please Enter A Valid Name!\n"
+    if (nullChecking(heroOccupationField.text.value))
+      errorMessage += "Please Enter A Occupation!\n"
+    if (nullChecking(heroRoleField.getSelectionModel.selectedItemProperty().value))
+      errorMessage += "Please Choose A Role!\n"
+    if (nullChecking(heroAffiliationField.getSelectionModel.selectedItemProperty().value))
+      errorMessage += "Please Choose A Affiliation!\n"
+    if (nullChecking(heroRaceField.getSelectionModel.selectedItemProperty().value))
+      errorMessage += "Please Choose A Race!\n"
+
+    if (nullChecking(heroHPField.text.value))
+      errorMessage += "Please Enter A Value For Health!\n"
     else {
       try {
-        Integer.parseInt(postalCodeField.getText());
+        Integer.parseInt(heroHPField.getText());
       } catch {
-        case e : NumberFormatException =>
-          errorMessage += "No valid postal code (must be an integer)!\n"
+        case e: NumberFormatException =>
+          errorMessage += "Health is Not Valid (must be an integer)!\n"
       }
     }
-    if (nullChecking(cityField.text.value))
-      errorMessage += "No valid city!\n"
-    if (nullChecking(birthdayField.text.value))
-      errorMessage += "No valid birtday!\n"
+
+    if (nullChecking(heroArmourField.text.value))
+      errorMessage += "Please Enter A Value For Armour!\n"
     else {
-      if (!birthdayField.text.value.isValid) {
-        errorMessage += "No valid birthday. Use the format dd.mm.yyyy!\n";
+      try {
+        Integer.parseInt(heroArmourField.getText());
+      } catch {
+        case e: NumberFormatException =>
+          errorMessage += "Armour is Not Valid (must be an integer)!\n"
+      }
+    }
+
+    if (nullChecking(heroSpeedField.text.value))
+      errorMessage += "Please Enter A Value For Speed!\n"
+    else {
+      try {
+        Integer.parseInt(heroSpeedField.getText());
+      } catch {
+        case e: NumberFormatException =>
+          errorMessage += "Speed is Not Valid (must be an integer)!\n"
+      }
+    }
+
+    if (nullChecking(heroBaseDamageField.text.value))
+      errorMessage += "Please Enter A Value For Base Damage!\n"
+    else {
+      try {
+        Integer.parseInt(heroBaseDamageField.getText());
+      } catch {
+        case e: NumberFormatException =>
+          errorMessage += "Base Damage is Not Valid (must be an integer)!\n"
       }
     }
 
@@ -102,7 +136,7 @@ class CreatorOverviewController(
       return true;
     } else {
       // Show the error message.
-      val alert = new Alert(Alert.AlertType.Error){
+      val alert = new Alert(Alert.AlertType.Error) {
         initOwner(dialogStage)
         title = "Invalid Fields"
         headerText = "Please correct invalid fields"
@@ -110,6 +144,6 @@ class CreatorOverviewController(
       }.showAndWait()
 
       return false;
-    }*/
+    }
   }
 }
