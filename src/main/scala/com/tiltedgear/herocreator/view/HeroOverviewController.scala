@@ -31,10 +31,48 @@ class HeroOverviewController(
     heroTable.items = HeroApp.heroData
   heroNameColumn.cellValueFactory = {_.value.heroName}
 
+  showHeroDetails(None);
+
+  heroTable.selectionModel().selectedItem.onChange(
+    (_, _, newValue) => showHeroDetails(Some(newValue))
+  )
+
+
   def handleApplicationExit(action: ActionEvent) = {
     Platform.exit();
     System.exit(0);
   }
+
+  private def showHeroDetails (hero : Option[Hero]) = {
+    hero match {
+      case Some(hero) =>
+        // Fill the labels with info from the person object.
+        heroNameLabel.text <== hero.heroName
+        heroRoleLabel.text <== hero.heroRole
+        heroAffiliationLabel.text <== hero.heroAffiliation
+        heroLoreLabel.text <== hero.heroLore
+        heroOccupationLabel.text <== hero.heroOccupation
+        heroRaceLabel.text <== hero.heroRace
+        heroHealthLabel.text = hero.heroHealth.value.toString
+        heroArmourLabel.text = hero.heroArmour.value.toString
+        heroSpeedLabel.text = hero.heroSpeed.value.toString
+        heroBaseDamageLabel.text = hero.heroBaseDamage.value.toString;
+
+      case None =>
+        // Person is null, remove all the text.
+        heroNameLabel.text = ""
+        heroRoleLabel.text = ""
+        heroAffiliationLabel.text = ""
+        heroLoreLabel.text = ""
+        heroOccupationLabel.text = ""
+        heroRaceLabel.text = ""
+        heroHealthLabel.text = ""
+        heroArmourLabel.text = ""
+        heroSpeedLabel.text = ""
+        heroBaseDamageLabel.text = ""
+    }
+  }
+
 
   def handleNewHero(action : ActionEvent) = {
     val hero = new Hero(
@@ -42,7 +80,7 @@ class HeroOverviewController(
       100,100,5,25)
     val okClicked = HeroApp.showCreatorOverview(hero);
     if (okClicked) {
-      hero.save() match {
+/*      hero.save() match {
         case Success(x) =>
           HeroApp.heroData += hero
         case Failure(e) =>
@@ -52,7 +90,7 @@ class HeroOverviewController(
             headerText = "Database Error"
             contentText = "Database problem filed to save changes"
           }.showAndWait()
-      }
+      }*/
     }
   }
 }

@@ -41,8 +41,8 @@
                                  <children>
                                     <GridPane layoutX="14.0" layoutY="14.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
                                       <columnConstraints>
-                                        <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="158.0" minWidth="10.0" prefWidth="132.0" />
-                                        <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="214.0" minWidth="10.0" prefWidth="194.0" />
+                                        <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="158.0" minWidth="10.0" prefWidth="109.0" />
+                                        <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="264.0" minWidth="10.0" prefWidth="217.0" />
                                       </columnConstraints>
                                       <rowConstraints>
                                         <RowConstraints maxHeight="41.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
@@ -152,7 +152,7 @@
                                                 <Insets left="5.0" />
                                              </padding>
                                           </Label>
-                                          <Label fx:id="heroLoreLabel" contentDisplay="CENTER" text="" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                          <Label fx:id="heroLoreLabel" alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="113.0" prefWidth="216.0" textFill="WHITE" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
                                              <padding>
                                                 <Insets left="5.0" top="5.0" />
                                              </padding>

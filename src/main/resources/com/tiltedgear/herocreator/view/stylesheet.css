@@ -171,19 +171,19 @@
 }
 
 .table-row-cell{
-    -fx-background-color: -fx-table-cell-border-color, #616161;
+    -fx-background-color: #1c1c1c;
     -fx-background-insets: 0, 0 0 1 0;
     -fx-padding: 0.0em; /* 0 */
 }
 
 .table-row-cell:odd{
-    -fx-background-color: -fx-table-cell-border-color, #424242;
+    -fx-background-color: #212121;
     -fx-background-insets: 0, 0 0 1 0;
     -fx-padding: 0.0em; /* 0 */
 }
 
 .table-row-cell:selected {
-    -fx-background-color: #005797;
+    -fx-background-color: #007bc2;
     -fx-background-insets: 0;
     -fx-background-radius: 1;
 }
