@@ -154,7 +154,7 @@
                                           </Label>
                                           <Label fx:id="heroLoreLabel" alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="113.0" prefWidth="216.0" textFill="WHITE" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
                                              <padding>
-                                                <Insets left="5.0" top="5.0" />
+                                                <Insets left="5.0" />
                                              </padding>
                                           </Label>
                                           <Label fx:id="heroOccupationLabel" contentDisplay="CENTER" text="" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4">

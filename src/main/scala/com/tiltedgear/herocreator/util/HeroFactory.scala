@@ -2,6 +2,7 @@ package com.tiltedgear.herocreator.util
 import com.tiltedgear.herocreator.HeroApp
 import com.tiltedgear.herocreator.model.Hero
 import scala.util.Random
+import com.tiltedgear.herocreator.util.LoremIpsum
 
 object HeroFactory {
   val rand = scala.util.Random
@@ -47,26 +48,26 @@ object HeroFactory {
     "Muhammad Azzim"
   )
   val possibleFactions = Seq(
-    "runem Empire",
-    "vrivaria Dynasty",
-    "wouhan Dynasty",
-    "sisan Kingdom",
-    "womor Kingdom",
-    "shurainyth Kingdom",
-    "okhepitus Empire",
-    "stuffucia Empire",
-    "eadrakidora Dynasty",
-    "aukiyeorith Kingdom",
-    "odrouba Kingdom",
-    "higary Kingdom",
-    "wreoneian Dynasty",
-    "bourene Kingdom",
-    "chiterra Kingdom",
-    "wuibbitopia Empire",
-    "stutakya Empire",
-    "kugales Empire",
-    "wezrodour Empire",
-    "aedrussurean Empire"
+    "Runem Empire",
+    "Vrivaria Dynasty",
+    "Wouhan Dynasty",
+    "Sisan Kingdom",
+    "Womor Kingdom",
+    "Shurainyth Kingdom",
+    "Okhepitus Empire",
+    "Stuffucia Empire",
+    "Eadrakidora Dynasty",
+    "Aukiyeorith Kingdom",
+    "Odrouba Kingdom",
+    "Higary Kingdom",
+    "Wreoneian Dynasty",
+    "Bourene Kingdom",
+    "Chiterra Kingdom",
+    "Wuibbitopia Empire",
+    "Stutakya Empire",
+    "Kugales Empire",
+    "Wezrodour Empire",
+    "Aedrussurean Empire"
   )
   val possibleRoles = Seq(
     "Support",
@@ -1072,7 +1073,7 @@ object HeroFactory {
         GetRandomElement(possibleNames, rand),
         GetRandomElement(possibleRoles, rand),
         GetRandomElement(possibleFactions, rand),
-        "Lorem Ipsum",
+        LoremIpsum.sentences(30),
         GetRandomElement(possibleOccupations, rand),
         GetRandomElement(possibleRaces, rand),
         (rand.nextInt(475)+25),
