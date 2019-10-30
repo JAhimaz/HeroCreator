@@ -20,7 +20,7 @@ object HeroApp extends JFXApp {
   val heroData = new ObservableBuffer[Hero]()
 
   /*Hardcoded Data*/
-  HeroFactory.heroGenerator()
+  HeroFactory.Generator()
 
   val resource = getClass.getResource("view/HeroOverview.fxml")
   val loader = new FXMLLoader(resource, NoDependencyResolver)
