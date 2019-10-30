@@ -1,10 +1,12 @@
 package com.tiltedgear.herocreator.model
 
-import scalafx.beans.property.{IntegerProperty, ObjectProperty, StringProperty}
 import java.time.LocalDate
-import com.tiltedgear.herocreator.util.Database
 
+import com.tiltedgear.herocreator.util.Database
+import scalafx.beans.property.{IntegerProperty, ObjectProperty, StringProperty}
 import scalikejdbc.DB
+
+import scala.util.Try
 
 class Hero(heroNameS: String, heroRoleS: String, heroAffiliationS: String, heroLoreS: String, heroOccupationS: String, heroRaceS: String,
            heroHPI: Int, heroArmourI: Int, heroSpeedI: Int, heroBaseDamageI: Int) extends Database{
@@ -24,7 +26,7 @@ class Hero(heroNameS: String, heroRoleS: String, heroAffiliationS: String, heroL
   var dateOfCreation = ObjectProperty[LocalDate](LocalDate.now())
 
   //Refactor This To Match Hero
-/*  def save() : Try[Int] = {
+ /* def save() : Try[Int] = {
     if (!(isExist)) {
       Try(DB autoCommit { implicit session =>
         sql"""
@@ -33,7 +35,7 @@ class Hero(heroNameS: String, heroRoleS: String, heroAffiliationS: String, heroL
 						(${heroName.value}, ${heroRole.value}, ${heroAffiliation.value},
 							${heroLore.value},${heroOccupation.value},${heroRace.value},
 							${heroHealth.value},${heroArmour.value},${heroSpeed.value},
-							${heroBaseDamage.value},${dateOfCreation.value.asString})
+							${heroBaseDamage.value})
 				""".update.apply()
       })
     } else {
@@ -50,8 +52,7 @@ class Hero(heroNameS: String, heroRoleS: String, heroAffiliationS: String, heroL
 				heroHealth  = ${heroHealth.value},
 				heroArmour  = ${heroArmour.value},
 				heroSpeed  = ${heroSpeed.value},
-				heroBaseDamage  = ${heroBaseDamage.value},
-				dateOfCreation  = ${dateOfCreation.value.asString}
+				heroBaseDamage  = ${heroBaseDamage.value}
 				 where heroName = ${heroName.value} and
 				 heroRole = ${heroRole.value}
 				""".update.apply()
