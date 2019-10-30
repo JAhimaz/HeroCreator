@@ -1,7 +1,7 @@
 package com.tiltedgear.herocreator
 
 import com.tiltedgear.herocreator.model.Hero
-import com.tiltedgear.herocreator.util.Database
+import com.tiltedgear.herocreator.util.{Database, HeroFactory}
 import com.tiltedgear.herocreator.view.{CreatorOverviewController, HeroOverviewController}
 import scalafx.application.JFXApp
 import scalafx.application.JFXApp.PrimaryStage
@@ -20,10 +20,7 @@ object HeroApp extends JFXApp {
   val heroData = new ObservableBuffer[Hero]()
 
   /*Hardcoded Data*/
-  heroData += new Hero("Mei", "Damage", "Chinese Federation", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec massa id magna ultrices euismod vitae et odio. Pellentesque fringilla magna ac tellus ornare, eget tempus nisi volutpat. Nam pulvinar blandit ipsum, ut vehicula turpis luctus vel. Quisque feugiat nunc odio. Duis varius elit ipsum, a aliquam lacus placerat ut. In ut augue vel elit lacinia sodales non ut nunc. Aenean finibus nisl metus, ut tincidunt erat molestie vitae. Fusce placerat mauris at felis fermentum egestas. Proin dignissim, metus commodo consectetur egestas, enim tellus tincidunt orci, et gravida nibh nulla at nisl. Maecenas dictum, ex sed faucibus tempus, nisi lorem blandit felis, sed venenatis sem odio feugiat purus. Cras elit orci, venenatis sit amet nibh at, convallis tempus odio. Vivamus facilisis massa et tellus volutpat varius. Sed nisi ipsum, consectetur at elit dictum, accumsan tristique dolor. Etiam cursus, ante quis ultricies dictum, eros velit maximus nulla, sit amet bibendum tortor nulla et orci. Cras facilisis commodo nisl, vitae scelerisque dui sollicitudin vitae. ", "Social Worker", "Chinese", 100, 250, 50, 75)
-  heroData += new Hero("John", "Damage", "Chinese Federation", "Lorem Ipsum", "Social Worker", "Chinese", 100, 250, 50, 75)
-  heroData += new Hero("Timmy", "Damage", "Chinese Federation", "Lorem Ipsum", "Social Worker", "Chinese", 100, 250, 50, 75)
-  heroData += new Hero("Test", "Damage", "Chinese Federation", "Lorem Ipsum", "Social Worker", "Chinese", 100, 250, 50, 75)
+  HeroFactory.heroGenerator()
 
   val resource = getClass.getResource("view/HeroOverview.fxml")
   val loader = new FXMLLoader(resource, NoDependencyResolver)
