@@ -4,7 +4,7 @@
 		module="herocreator-build"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20191018193145"
+		publication="20191030081104"
 		e:sbtVersion="1.0" e:scalaVersion="2.12"
 	>
 		<description>

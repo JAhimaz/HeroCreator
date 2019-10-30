@@ -2,14 +2,10 @@
 HeroCreator is a assignment for object-oriented programming course.
 
 ### Colour Palette
-Application Background - #2f2f2f
+1. Application Background - #2f2f2f
+2. TextBox Colour - #222222
+3. TextBox Border - #4f4f4f
+4. Root Background - #000000
+5. Button Colour - #515151
 
-TextBox Colour - #222222
-
-TextBox Border - #4f4f4f
-
-Root Background - #000000
-
-Button Colour - #515151
-
-Retards
+Update the Readme.
