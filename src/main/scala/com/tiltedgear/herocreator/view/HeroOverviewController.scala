@@ -9,7 +9,9 @@ import scalafx.Includes._
 import scalafx.application.Platform
 import scalafx.event.ActionEvent
 import scalafx.beans.property.StringProperty
+import scalafx.scene.control.Alert.AlertType
 
+import scala.Option
 import scala.util.{Failure, Success}
 
 @sfxml
@@ -28,13 +30,13 @@ class HeroOverviewController(
   private val heroBaseDamageLabel : Label
 ) {
 
-    heroTable.items = HeroApp.heroData
+  heroTable.items = HeroApp.heroData
   heroNameColumn.cellValueFactory = {_.value.heroName}
 
   showHeroDetails(None);
 
   heroTable.selectionModel().selectedItem.onChange(
-    (_, _, newValue) => showHeroDetails(Some(newValue))
+    (_, _, newValue) => showHeroDetails(Option(newValue))
   )
 
 
@@ -46,7 +48,6 @@ class HeroOverviewController(
   private def showHeroDetails (hero : Option[Hero]) = {
     hero match {
       case Some(hero) =>
-        // Fill the labels with info from the person object.
         heroNameLabel.text <== hero.heroName
         heroRoleLabel.text <== hero.heroRole
         heroAffiliationLabel.text <== hero.heroAffiliation
@@ -59,7 +60,13 @@ class HeroOverviewController(
         heroBaseDamageLabel.text = hero.heroBaseDamage.value.toString + " Dps";
 
       case None =>
-        // Person is null, remove all the text.
+        heroNameLabel.text.unbind()
+        heroRoleLabel.text.unbind()
+        heroAffiliationLabel.text .unbind()
+        heroLoreLabel.text.unbind()
+        heroOccupationLabel.text.unbind()
+        heroRaceLabel.text.unbind()
+
         heroNameLabel.text = ""
         heroRoleLabel.text = ""
         heroAffiliationLabel.text = ""
@@ -73,11 +80,26 @@ class HeroOverviewController(
     }
   }
 
+  def handleDeleteHero(action : ActionEvent) = {
+    val selectedIndex = heroTable.selectionModel().selectedIndex.value
+    if (selectedIndex >= 0) {
+      heroTable.items().remove(selectedIndex);
+    } else {
+      // Nothing selected.
+      val alert = new Alert(AlertType.Warning){
+        initOwner(HeroApp.stage)
+        title       = "No Selection"
+        headerText  = "No Person Selected"
+        contentText = "Please select a person in the table."
+      }.showAndWait()
+    }
+  }
+
 
   def handleNewHero(action : ActionEvent) = {
     val hero = new Hero(
       "", "", "", "", "", "",
-      100,100,5,25)
+      0,0,0,0)
     val okClicked = HeroApp.showCreatorOverview(hero);
     if (okClicked) {
 /*      hero.save() match {
