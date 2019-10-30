@@ -1,7 +1,8 @@
 package com.tiltedgear.herocreator
 
 import com.tiltedgear.herocreator.model.Hero
-import com.tiltedgear.herocreator.util.{Database, HeroFactory}
+import com.tiltedgear.herocreator.util.Database
+import com.tiltedgear.herocreator.util.factory.HeroFactory
 import com.tiltedgear.herocreator.view.{CreatorOverviewController, HeroOverviewController}
 import scalafx.application.JFXApp
 import scalafx.application.JFXApp.PrimaryStage
