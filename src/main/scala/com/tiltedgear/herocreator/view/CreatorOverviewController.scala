@@ -23,12 +23,16 @@ class CreatorOverviewController(
   private val heroBaseDamageField : TextField
 ) {
 
-  heroRaceField += "Undead"
-  heroRaceField += "Night Elf"
+  heroRoleField += "Support"
+  heroRoleField += "Damage"
+  heroRoleField += "Tank"
+
   heroRaceField += "Human"
+  heroRaceField += "Night Elf"
+  heroRaceField += "Undead"
   heroRaceField += "Orc"
 
-  heroRaceField.getSelectionModel.selectFirst()
+  heroAffiliationField += "Test"
 
   var         dialogStage : Stage  = null
   private var _hero : Hero = null
@@ -39,11 +43,11 @@ class CreatorOverviewController(
     _hero = x
 
     heroNameField.text = _hero.heroName.value
-    heroRoleField.selectionModel().select(hero.heroRole.value)
-    heroAffiliationField.selectionModel().select(hero.heroAffiliation.value)
+    heroRoleField.getSelectionModel.selectFirst()
+    heroAffiliationField.getSelectionModel.selectFirst()
     heroLoreField.text = _hero.heroLore.value
     heroOccupationField.text = _hero.heroOccupation.value
-    heroRaceField.selectionModel().select(hero.heroRace.value)
+    heroRaceField.getSelectionModel.selectFirst()
     heroHPField.text = _hero.heroHealth.value.toString
     heroArmourField.text = _hero.heroArmour.value.toString
     heroSpeedField.text = _hero.heroSpeed.value.toString
