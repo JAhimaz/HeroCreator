@@ -10,8 +10,6 @@ HeroCreator is a assignment for object-oriented programming course.
 
 Current Questions:
 1. Create a function to handle stat generation based on role
-2. Pushing Data Into ComboBox
+2. Pushing Data Into ComboBox <- Simpler Way Using PreMade Data
 3. Checking If Stats != 0
-4. ComboBox Error Checking? (If Necessary)
-5. Directional Storage for ComboBox
 6. SQL Not working
