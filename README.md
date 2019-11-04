@@ -8,4 +8,8 @@ HeroCreator is a assignment for object-oriented programming course.
 4. Root Background - #000000
 5. Button Colour - #515151
 
-Update the Readme.
+Current Questions:
+1. Create a function to handle stat generation based on role
+2. Pushing Data Into ComboBox <- Simpler Way Using PreMade Data
+3. Checking If Stats != 0
+6. SQL Not working
