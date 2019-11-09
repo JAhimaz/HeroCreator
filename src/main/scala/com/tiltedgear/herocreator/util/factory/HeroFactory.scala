@@ -1,8 +1,11 @@
 package com.tiltedgear.herocreator.util.factory
 import com.tiltedgear.herocreator.HeroApp
 import com.tiltedgear.herocreator.model.Hero
+import scalafx.scene.control.Alert
+import scalikejdbc._
+
 import scala.io.Source
-import scala.util.Random
+import scala.util.{Failure, Random, Success}
 
 object HeroFactory {
 
@@ -1412,31 +1415,42 @@ object HeroFactory {
     "Yardmaster",
     "Zoologist"
   )
-  val possibleRaces = Seq(
-    "Undead",
-    "Night Elf",
-    "Orc",
-    "Human"
-  )
+  val possibleRaces: List[String] = DB readOnly { implicit session =>
+    SQL("select * from races").map(rs => rs.string("name")).list.apply()
+  }
 
-  def Generator() = {
+  def Generator(noOfHeroes: Int) = {
 
-    for(i <- 3 to (rand.nextInt(11)+4)){
+    for(i <- 1 to noOfHeroes){
       val nameGenerator: String = GetRandomElement(possibleFirstNames, rand) + " " + GetRandomElement(possibleLastNames, rand)
       val role: String = GetRandomElement(possibleRoles, rand)
 
-      HeroApp.heroData += new Hero(
+      val hero = new Hero(
         nameGenerator,
         role,
         GetRandomElement(possibleFactions, rand),
-        LoremIpsum.sentences(30),
+        LoremIpsum.sentences(1),
         GetRandomElement(possibleOccupations, rand),
-        GetRandomElement(possibleRaces, rand),
+        GetRandomElement(possibleRaces.toSeq, rand),
         rand.nextInt(100)+50,
         rand.nextInt(100)+50,
         rand.nextInt(50)+25,
         rand.nextInt(5)+10
-      )}
+      )
+
+      hero.save() match {
+        case Success(x) =>
+          /*HeroApp.heroData += hero*/
+        case Failure(e) =>
+          val alert = new Alert(Alert.AlertType.Warning) {
+            initOwner(HeroApp.stage)
+            title = "Failed to Save"
+            headerText = "Database Error"
+            contentText = "Database problem filed to save changes"
+          }.showAndWait()
+      }
+
+    }
   }
 
   def GetRandomElement(list: Seq[String], random: Random): String =

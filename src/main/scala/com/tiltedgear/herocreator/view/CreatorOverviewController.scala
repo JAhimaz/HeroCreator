@@ -2,6 +2,7 @@ package com.tiltedgear.herocreator.view
 
 import com.tiltedgear.herocreator.model.Hero
 import com.tiltedgear.herocreator.HeroApp
+import com.tiltedgear.herocreator.util.factory.HeroFactory
 import scalafx.scene.control.{Alert, ComboBox, TextArea, TextField}
 import scalafx.stage.Stage
 import scalafxml.core.macros.sfxml
@@ -27,10 +28,7 @@ class CreatorOverviewController(
   heroRoleField += "Damage"
   heroRoleField += "Tank"
 
-  heroRaceField += "Human"
-  heroRaceField += "Night Elf"
-  heroRaceField += "Undead"
-  heroRaceField += "Orc"
+/*  heroRaceField = HeroFactory.possibleRaces*/
 
   heroAffiliationField += "Test"
 
