@@ -24,13 +24,17 @@ class CreatorOverviewController(
   private val heroBaseDamageField : TextField
 ) {
 
-  heroRoleField += "Support"
-  heroRoleField += "Damage"
-  heroRoleField += "Tank"
+  for(i <- HeroFactory.possibleRoles){
+    heroRoleField += i
+  }
 
-/*  heroRaceField = HeroFactory.possibleRaces*/
+  for(i <- HeroFactory.possibleRaces){
+    heroRaceField += i
+  }
 
-  heroAffiliationField += "Test"
+  for(i <- HeroFactory.possibleFactions){
+    heroAffiliationField += i
+  }
 
   var         dialogStage : Stage  = null
   private var _hero : Hero = null
