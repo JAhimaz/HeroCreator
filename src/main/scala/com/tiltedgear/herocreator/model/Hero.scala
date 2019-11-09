@@ -64,7 +64,7 @@ class Hero(heroNameS: String, heroRoleS: String, heroAffiliationS: String, heroL
       Try(DB autoCommit { implicit session =>
         sql"""
 				delete from hero where
-					heroName = ${heroName.value} and heroRole = ${heroRole.value}
+					heroName = ${heroName.value}
 				""".update.apply()
       })
     } else
