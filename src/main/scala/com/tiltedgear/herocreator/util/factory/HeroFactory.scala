@@ -1415,6 +1415,10 @@ object HeroFactory {
     "Yardmaster",
     "Zoologist"
   )
+
+  //DO SQL FOR ROLES
+  //DO SQL FOR FACTIONS
+
   val possibleRaces: List[String] = DB readOnly { implicit session =>
     SQL("select * from races").map(rs => rs.string("name")).list.apply()
   }
