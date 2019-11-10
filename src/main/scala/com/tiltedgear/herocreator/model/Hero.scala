@@ -74,7 +74,7 @@ class Hero(heroNameS: String, heroRoleS: String, heroAffiliationS: String, heroL
     DB readOnly { implicit session =>
       sql"""
 				select * from hero where
-				heroName = ${heroName.value} and heroRole = ${heroRole.value}
+				heroName = ${heroName.value}
 			""".map(rs => rs.string("heroName")).single.apply()
     } match {
       case Some(x) => true
