@@ -131,6 +131,11 @@
     -fx-effect: innershadow( gaussian, rgba(0, 0, 0, 0.3), 10, 0.3, 1, 1);
 }
 
+.character-pane {
+    -fx-background-image: url("../../../../images/background.jpg");
+    -fx-effect: innershadow( gaussian, rgba(0, 0, 0, 0.3), 10, 0.3, 1, 1);
+}
+
 /* Tab Pane Styling */
 .tab-header-background {
     -fx-background-color:  #0a0a0a;

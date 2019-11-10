@@ -23,25 +23,26 @@ class CreatorOverviewController(
   private val heroBaseDamageField : TextField,
 ) {
 
-  for(i <- HeroFactory.possibleRoles){
+  for (i <- HeroFactory.possibleRoles) {
     heroRoleField += i
   }
 
-  for(i <- HeroFactory.possibleRaces){
+  for (i <- HeroFactory.possibleRaces) {
     heroRaceField += i
   }
 
-  for(i <- HeroFactory.possibleFactions){
+  for (i <- HeroFactory.possibleFactions) {
     heroAffiliationField += i
   }
 
-  var         dialogStage : Stage  = null
-  private var _hero : Hero = null
-  var         okClicked = false
-  var         isEditing = false
+  var dialogStage: Stage = null
+  private var _hero: Hero = null
+  var okClicked = false
+  var isEditing = false
 
-  def hero = _hero
-  def hero_=(x : Hero) {
+  def hero: Hero = _hero
+
+  def hero_=(x: Hero) {
     _hero = x
 
     heroNameField.text = _hero.heroName.value
@@ -55,16 +56,16 @@ class CreatorOverviewController(
     heroSpeedField.text = _hero.heroSpeed.value.toString
     heroBaseDamageField.text = _hero.heroBaseDamage.value.toString
 
-    if(_hero.heroName.value != ""){
+    if (_hero.heroName.value != "") {
       isEditing = true;
       heroNameField.setEditable(false)
     }
   }
 
-  def doRandomStats(action : ActionEvent): Unit ={
+  def doRandomStats(action: ActionEvent): Unit = {
     val generatedHero = HeroFactory.Generator()
 
-    if(!isEditing){
+    if (!isEditing) {
       heroNameField.text = generatedHero.heroName.value
     }
 
@@ -79,7 +80,7 @@ class CreatorOverviewController(
     heroBaseDamageField.text = generatedHero.heroBaseDamage.value.toString
   }
 
-  def handleOk(action :ActionEvent){
+  def handleOk(action: ActionEvent) {
     if (isInputValid()) {
       _hero.heroName <== heroNameField.text
       _hero.heroRole <== heroRoleField.getSelectionModel.selectedItemProperty
@@ -97,11 +98,11 @@ class CreatorOverviewController(
     }
   }
 
-  def handleCancel(action :ActionEvent) {
+  def handleCancel(action: ActionEvent) {
     dialogStage.close();
   }
 
-  def nullChecking (x : String) = x == null || x.length == 0
+  def nullChecking(x: String) = x == null || x.length == 0
 
   def isInputValid() : Boolean = {
     var errorMessage = ""

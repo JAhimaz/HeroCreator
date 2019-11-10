@@ -34,9 +34,7 @@ class HeroOverviewController(
   private val heroBaseDamageLabel : Label
 ) {
 
-  val appWindow = HeroApp.stage
-  var posX: Double = 0
-  var posY: Double = 0
+
 
   heroTable.items = HeroApp.heroData
   heroNameColumn.cellValueFactory = {_.value.heroName}
@@ -65,10 +63,10 @@ class HeroOverviewController(
         heroLoreLabel.text <== hero.heroLore
         heroOccupationLabel.text <== hero.heroOccupation
         heroRaceLabel.text <== hero.heroRace
-        heroHealthLabel.text = hero.heroHealth.value.toString + " HP"
-        heroArmourLabel.text = hero.heroArmour.value.toString + " AP"
-        heroSpeedLabel.text = hero.heroSpeed.value.toString + " km\\h"
-        heroBaseDamageLabel.text = hero.heroBaseDamage.value.toString + " Dps";
+        heroHealthLabel.text = hero.heroHealth.value.toString
+        heroArmourLabel.text = hero.heroArmour.value.toString
+        heroSpeedLabel.text = hero.heroSpeed.value.toString
+        heroBaseDamageLabel.text = hero.heroBaseDamage.value.toString;
 
       case None =>
         heroNameLabel.text.unbind()
@@ -165,18 +163,5 @@ class HeroOverviewController(
           }.showAndWait()
       }
     }
-  }
-
-  def getMouseLocation(mouseEvent: MouseEvent){
-    posX = mouseEvent.getX()
-    posY = mouseEvent.getY()
-
-    println(posY)
-    println(posX)
-  }
-
-  def moveWindow(mouseDragEvent: MouseDragEvent): Unit ={
-    appWindow.x_= (appWindow.getX - posX)
-    appWindow.y_= (appWindow.getY - posY)
   }
 }

@@ -1,5 +1,7 @@
 package com.tiltedgear.herocreator
 
+import java.beans.EventHandler
+
 import com.tiltedgear.herocreator.model.Hero
 import com.tiltedgear.herocreator.util.Database
 import com.tiltedgear.herocreator.util.factory.HeroFactory
@@ -11,12 +13,15 @@ import scalafx.Includes._
 import scalafxml.core.{FXMLLoader, FXMLView, NoDependencyResolver}
 import javafx.{scene => jfxs}
 import scalafx.collections.ObservableBuffer
+import scalafx.scene.input.MouseEvent
 import scalafx.stage.{Modality, Stage, StageStyle}
 
 object HeroApp extends JFXApp {
-
   Database.setupDB()
   val heroData = new ObservableBuffer[Hero]()
+
+  var screenPosX: Double = 0
+  var screenPosY: Double = 0
 
   /*HeroFactory.Generator(10)*/
 
@@ -32,13 +37,13 @@ object HeroApp extends JFXApp {
 
   stage = new PrimaryStage{
       title = "Hero Creator | TiltedGear Studios"
+      initStyle(StageStyle.Undecorated)
       resizable = false
       scene = new Scene{
         root = roots
       }
   }
 
-  stage.initStyle(StageStyle.Undecorated)
 
   def showCreatorOverview(hero: Hero) = {
     val resource = getClass.getResourceAsStream("view/CreatorOverview.fxml")
@@ -65,3 +70,16 @@ object HeroApp extends JFXApp {
 
 
 }
+
+/*
+val appWindow = HeroApp.stage
+
+
+def getMouseLocation(mouseEvent: MouseEvent){
+
+}
+
+  def moveWindow(mouseDragEvent: MouseDragEvent): Unit ={
+  appWindow.x_= (appWindow.getX - screenPosX)
+  appWindow.y_= (appWindow.getY - screenPosY)
+}*/
