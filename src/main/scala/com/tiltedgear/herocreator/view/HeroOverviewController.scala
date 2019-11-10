@@ -122,15 +122,27 @@ class HeroOverviewController(
     if (selectedHero != null) {
       val okClicked = HeroApp.showCreatorOverview(selectedHero)
 
-      if (okClicked) showHeroDetails(Some(selectedHero))
+      if (okClicked == true) {
+        selectedHero.save() match {
+          case Success(x) =>
+            showHeroDetails(Some(selectedHero))
+          case Failure(e) =>
+            val alert = new Alert(Alert.AlertType.Warning) {
+              initOwner(HeroApp.stage)
+              title = "Failed to Save"
+              headerText = "Database Error"
+              contentText = "Database problem filed to save changes"
+            }.showAndWait()
+        }
+      }
 
     } else {
       // Nothing selected.
       val alert = new Alert(Alert.AlertType.Warning){
         initOwner(HeroApp.stage)
         title       = "No Selection"
-        headerText  = "No Hero Selected"
-        contentText = "Please select a hero from the table."
+        headerText  = "No Hero Was Selected"
+        contentText = "Please select a Hero in the table."
       }.showAndWait()
     }
   }
@@ -140,7 +152,7 @@ class HeroOverviewController(
       "", "", "", "", "", "",
       0,0,0,0)
     val okClicked = HeroApp.showCreatorOverview(hero);
-    if (okClicked) {
+    if (okClicked == true) {
       hero.save() match {
         case Success(x) =>
           HeroApp.heroData += hero

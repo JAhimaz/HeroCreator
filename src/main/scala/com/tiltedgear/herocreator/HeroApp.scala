@@ -18,7 +18,7 @@ object HeroApp extends JFXApp {
   Database.setupDB()
   val heroData = new ObservableBuffer[Hero]()
 
-/*  HeroFactory.Generator(1)*/
+  /*HeroFactory.Generator(10)*/
 
   heroData ++= Hero.getAllHeroes
 
@@ -57,7 +57,6 @@ object HeroApp extends JFXApp {
     }
 
     dialog.initStyle(StageStyle.Undecorated)
-
     control2.dialogStage = dialog
     control2.hero = hero
     dialog.showAndWait()
