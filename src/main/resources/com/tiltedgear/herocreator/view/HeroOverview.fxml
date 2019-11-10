@@ -1,21 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.shape.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.text.*?>
-<?import javafx.scene.effect.*?>
 <?import javafx.geometry.*?>
 <?import java.net.*?>
-<?import javafx.collections.*?>
 <?import javafx.scene.control.*?>
-<?import java.lang.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.collections.FXCollections?>
-<?import java.net.URL?>
+
 
 <AnchorPane prefHeight="600" prefWidth="600.0" style="-fx-background-color: #0a0a0a;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tiltedgear.herocreator.view.HeroOverviewController">
    <children>
-      <TabPane layoutX="10.0" layoutY="10.0" onMouseClicked="#getMouseLocation" prefHeight="600.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+      <TabPane layoutX="10.0" layoutY="10.0" prefHeight="600.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
          <stylesheets>
             <URL value="@stylesheet.css" />
          </stylesheets>
@@ -137,17 +130,17 @@
                                                 <Insets left="10.0" />
                                              </GridPane.margin>
                                           </Label>
-                                          <Label fx:id="heroNameLabel" contentDisplay="CENTER" text="" textFill="WHITE" GridPane.columnIndex="1">
+                                          <Label fx:id="heroNameLabel" contentDisplay="CENTER" textFill="WHITE" GridPane.columnIndex="1">
                                              <padding>
                                                 <Insets left="5.0" />
                                              </padding>
                                           </Label>
-                                          <Label fx:id="heroRoleLabel" contentDisplay="CENTER" text="" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                          <Label fx:id="heroRoleLabel" contentDisplay="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                              <padding>
                                                 <Insets left="5.0" />
                                              </padding>
                                           </Label>
-                                          <Label fx:id="heroAffiliationLabel" contentDisplay="CENTER" text="" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                          <Label fx:id="heroAffiliationLabel" contentDisplay="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
                                              <padding>
                                                 <Insets left="5.0" />
                                              </padding>
@@ -157,32 +150,32 @@
                                                 <Insets left="5.0" />
                                              </padding>
                                           </Label>
-                                          <Label fx:id="heroOccupationLabel" contentDisplay="CENTER" text="" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                          <Label fx:id="heroOccupationLabel" contentDisplay="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4">
                                              <padding>
                                                 <Insets left="5.0" />
                                              </padding>
                                           </Label>
-                                          <Label fx:id="heroRaceLabel" contentDisplay="CENTER" text="" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                          <Label fx:id="heroRaceLabel" contentDisplay="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="5">
                                              <padding>
                                                 <Insets left="5.0" />
                                              </padding>
                                           </Label>
-                                          <Label fx:id="heroHealthLabel" contentDisplay="CENTER" text="" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                                          <Label fx:id="heroHealthLabel" contentDisplay="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="6">
                                              <padding>
                                                 <Insets left="5.0" />
                                              </padding>
                                           </Label>
-                                          <Label fx:id="heroArmourLabel" contentDisplay="CENTER" text="" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                                          <Label fx:id="heroArmourLabel" contentDisplay="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="7">
                                              <padding>
                                                 <Insets left="5.0" />
                                              </padding>
                                           </Label>
-                                          <Label fx:id="heroSpeedLabel" contentDisplay="CENTER" text="" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                                          <Label fx:id="heroSpeedLabel" contentDisplay="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="8">
                                              <padding>
                                                 <Insets left="5.0" />
                                              </padding>
                                           </Label>
-                                          <Label fx:id="heroBaseDamageLabel" contentDisplay="CENTER" text="" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                                          <Label fx:id="heroBaseDamageLabel" contentDisplay="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="9">
                                              <padding>
                                                 <Insets left="5.0" />
                                              </padding>

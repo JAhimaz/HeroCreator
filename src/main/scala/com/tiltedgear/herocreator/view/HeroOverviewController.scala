@@ -34,9 +34,7 @@ class HeroOverviewController(
   private val heroBaseDamageLabel : Label
 ) {
 
-  val appWindow = HeroApp.stage
-  var posX: Double = 0
-  var posY: Double = 0
+
 
   heroTable.items = HeroApp.heroData
   heroNameColumn.cellValueFactory = {_.value.heroName}
@@ -165,18 +163,5 @@ class HeroOverviewController(
           }.showAndWait()
       }
     }
-  }
-
-  def getMouseLocation(mouseEvent: MouseEvent){
-    posX = mouseEvent.getX()
-    posY = mouseEvent.getY()
-
-    println(posY)
-    println(posX)
-  }
-
-  def moveWindow(mouseDragEvent: MouseDragEvent): Unit ={
-    appWindow.x_= (appWindow.getX - posX)
-    appWindow.y_= (appWindow.getY - posY)
   }
 }
