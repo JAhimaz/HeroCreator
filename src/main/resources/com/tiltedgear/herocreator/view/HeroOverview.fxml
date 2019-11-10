@@ -15,7 +15,7 @@
 
 <AnchorPane prefHeight="600" prefWidth="600.0" style="-fx-background-color: #0a0a0a;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tiltedgear.herocreator.view.HeroOverviewController">
    <children>
-      <TabPane layoutX="10.0" layoutY="10.0" prefHeight="600.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+      <TabPane layoutX="10.0" layoutY="10.0" onMouseClicked="#getMouseLocation" prefHeight="600.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
          <stylesheets>
             <URL value="@stylesheet.css" />
          </stylesheets>
@@ -26,7 +26,7 @@
                      <children>
                         <SplitPane dividerPositions="0.35" prefHeight="160.0" prefWidth="200.0" scaleShape="false" style="-fx-background-color: #363636;" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
                            <items>
-                              <AnchorPane focusTraversable="true" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" styleClass="inner-pane">
+                              <AnchorPane focusTraversable="true" maxWidth="-Infinity" minHeight="0.0" minWidth="200.0" prefHeight="160.0" prefWidth="200.0" styleClass="inner-pane">
                                  <children>
                                     <TableView fx:id="heroTable" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                       <columns>
@@ -37,7 +37,7 @@
                                        </columnResizePolicy>
                                     </TableView>
                                  </children></AnchorPane>
-                              <AnchorPane focusTraversable="true" minHeight="0.0" minWidth="0.0" prefHeight="533.0" prefWidth="324.0" styleClass="inner-pane">
+                              <AnchorPane focusTraversable="true" minHeight="0.0" minWidth="0.0" prefHeight="533.0" styleClass="inner-pane">
                                  <children>
                                     <GridPane layoutX="14.0" layoutY="14.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
                                       <columnConstraints>

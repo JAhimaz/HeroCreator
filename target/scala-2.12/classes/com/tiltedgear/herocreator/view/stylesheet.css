@@ -1,6 +1,8 @@
 .split-pane:horizontal > .split-pane-divider {
    -fx-background-color: transparent;
+   -fx-cursor: default;
 }
+
 
 .dropshadow-general {
     -fx-effect: dropshadow(gaussian, rgb(0, 0, 0, 0.2), 20, 0.3, 1, 1);
@@ -20,6 +22,7 @@
 }
 
 .create-button {
+    -fx-cursor: pointer;
     -fx-background-color:
         linear-gradient(#f0ff35, #a9ff00),
         radial-gradient(center 50% -40%, radius 200%, #b8ee36 45%, #80c800 50%);
@@ -30,6 +33,7 @@
 }
 
 .create-button:hover {
+    -fx-cursor: pointer;
     -fx-background-color:
       transparent,
       transparent,
@@ -38,6 +42,7 @@
 }
 
 .edit-button {
+    -fx-cursor: pointer;
     -fx-background-color:
         linear-gradient(#f08f3a, #f0ad3a),
         radial-gradient(center 50% -40%, radius 200%, #f0ad3a 45%, #f08f3a 50%);
@@ -48,6 +53,7 @@
 }
 
 .edit-button:hover  {
+    -fx-cursor: pointer;
     -fx-background-color:
       transparent,
       transparent,
@@ -56,6 +62,7 @@
 }
 
 .exit-button {
+    -fx-cursor: pointer;
     -fx-background-color:
         linear-gradient(#ff1717, #a12020),
         radial-gradient(center 50% -40%, radius 200%, #ff1717 45%, #f21f1f 50%);
@@ -66,6 +73,7 @@
 }
 
 .exit-button:hover {
+    -fx-cursor: pointer;
     -fx-background-color:
       transparent,
       transparent,
@@ -97,6 +105,10 @@
     -fx-background-color: #222222;
     -fx-border-color: white;
     -fx-text-fill: white;
+}
+
+.text-field:readonly {
+    -fx-opacity: 0.1;
 }
 
 .text-area{
@@ -167,6 +179,7 @@
 }
 
 .table-view .table-cell{
+    -fx-cursor: pointer;
     -fx-text-fill: white;
 }
 

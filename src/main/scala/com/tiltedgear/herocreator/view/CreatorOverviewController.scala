@@ -2,12 +2,12 @@ package com.tiltedgear.herocreator.view
 
 import com.tiltedgear.herocreator.model.Hero
 import com.tiltedgear.herocreator.HeroApp
+import com.tiltedgear.herocreator.util.factory.HeroFactory
 import scalafx.scene.control.{Alert, ComboBox, TextArea, TextField}
 import scalafx.stage.Stage
 import scalafxml.core.macros.sfxml
 import scalafx.event.ActionEvent
 import scalafx.Includes._
-
 
 @sfxml
 class CreatorOverviewController(
@@ -20,38 +20,63 @@ class CreatorOverviewController(
   private val heroHPField : TextField,
   private val heroArmourField : TextField,
   private val heroSpeedField : TextField,
-  private val heroBaseDamageField : TextField
+  private val heroBaseDamageField : TextField,
 ) {
 
-  heroRoleField += "Support"
-  heroRoleField += "Damage"
-  heroRoleField += "Tank"
+  for(i <- HeroFactory.possibleRoles){
+    heroRoleField += i
+  }
 
-  heroRaceField += "Human"
-  heroRaceField += "Night Elf"
-  heroRaceField += "Undead"
-  heroRaceField += "Orc"
+  for(i <- HeroFactory.possibleRaces){
+    heroRaceField += i
+  }
 
-  heroAffiliationField += "Test"
+  for(i <- HeroFactory.possibleFactions){
+    heroAffiliationField += i
+  }
 
   var         dialogStage : Stage  = null
   private var _hero : Hero = null
   var         okClicked = false
+  var         isEditing = false
 
   def hero = _hero
   def hero_=(x : Hero) {
     _hero = x
 
     heroNameField.text = _hero.heroName.value
-    heroRoleField.getSelectionModel.selectFirst()
-    heroAffiliationField.getSelectionModel.selectFirst()
+    heroRoleField.value = _hero.heroRole.value
+    heroAffiliationField.value = _hero.heroAffiliation.value
     heroLoreField.text = _hero.heroLore.value
     heroOccupationField.text = _hero.heroOccupation.value
-    heroRaceField.getSelectionModel.selectFirst()
+    heroRaceField.value = _hero.heroRace.value
     heroHPField.text = _hero.heroHealth.value.toString
     heroArmourField.text = _hero.heroArmour.value.toString
     heroSpeedField.text = _hero.heroSpeed.value.toString
     heroBaseDamageField.text = _hero.heroBaseDamage.value.toString
+
+    if(_hero.heroName.value != ""){
+      isEditing = true;
+      heroNameField.setEditable(false)
+    }
+  }
+
+  def doRandomStats(action : ActionEvent): Unit ={
+    val generatedHero = HeroFactory.Generator()
+
+    if(!isEditing){
+      heroNameField.text = generatedHero.heroName.value
+    }
+
+    heroRoleField.value = generatedHero.heroRole.value
+    heroAffiliationField.value = generatedHero.heroAffiliation.value
+    heroLoreField.text = generatedHero.heroLore.value
+    heroOccupationField.text = generatedHero.heroOccupation.value
+    heroRaceField.value = generatedHero.heroRace.value
+    heroHPField.text = generatedHero.heroHealth.value.toString
+    heroArmourField.text = generatedHero.heroArmour.value.toString
+    heroSpeedField.text = generatedHero.heroSpeed.value.toString
+    heroBaseDamageField.text = generatedHero.heroBaseDamage.value.toString
   }
 
   def handleOk(action :ActionEvent){
@@ -118,7 +143,7 @@ class CreatorOverviewController(
       errorMessage += "Please Enter A Value For Speed!\n"
     else {
       try {
-        Integer.parseInt(heroSpeedField.getText());
+        Integer.parseInt(heroSpeedField.getText()) > 10;
       } catch {
         case e: NumberFormatException =>
           errorMessage += "Speed is Not Valid (must be an integer)!\n"

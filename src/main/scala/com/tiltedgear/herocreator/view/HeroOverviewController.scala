@@ -4,12 +4,16 @@ import com.tiltedgear.herocreator.model.Hero
 import scalafx.scene.control.{Alert, Button, Label, TableColumn, TableView}
 import scalafxml.core.macros.sfxml
 import com.tiltedgear.herocreator.HeroApp
+import com.tiltedgear.herocreator.util.factory.HeroFactory
 import javafx.fxml.FXML
 import scalafx.Includes._
 import scalafx.application.Platform
 import scalafx.event.ActionEvent
 import scalafx.beans.property.StringProperty
 import scalafx.scene.control.Alert.AlertType
+import scalafx.scene.input
+import scalafx.scene.input.{MouseDragEvent, MouseEvent}
+import scalafx.stage.StageStyle
 
 import scala.Option
 import scala.util.{Failure, Success}
@@ -30,6 +34,10 @@ class HeroOverviewController(
   private val heroBaseDamageLabel : Label
 ) {
 
+  val appWindow = HeroApp.stage
+  var posX: Double = 0
+  var posY: Double = 0
+
   heroTable.items = HeroApp.heroData
   heroNameColumn.cellValueFactory = {_.value.heroName}
 
@@ -39,6 +47,9 @@ class HeroOverviewController(
     (_, _, newValue) => showHeroDetails(Option(newValue))
   )
 
+  def doGenerateHeroes(): Unit ={
+    HeroFactory.Generator(2)
+  }
 
   def handleApplicationExit(action: ActionEvent) = {
     Platform.exit();
@@ -84,7 +95,7 @@ class HeroOverviewController(
     val selectedIndex = heroTable.selectionModel().selectedIndex.value
     val selectedHero = heroTable.selectionModel().selectedItem.value
     if (selectedIndex >= 0) {
-      selectedHero.save() match {
+      selectedHero.delete match {
         case Success(x) =>
           heroTable.items().remove(selectedIndex);
         case Failure(e) =>
@@ -111,15 +122,27 @@ class HeroOverviewController(
     if (selectedHero != null) {
       val okClicked = HeroApp.showCreatorOverview(selectedHero)
 
-      if (okClicked) showHeroDetails(Some(selectedHero))
+      if (okClicked == true) {
+        selectedHero.save() match {
+          case Success(x) =>
+            showHeroDetails(Some(selectedHero))
+          case Failure(e) =>
+            val alert = new Alert(Alert.AlertType.Warning) {
+              initOwner(HeroApp.stage)
+              title = "Failed to Save"
+              headerText = "Database Error"
+              contentText = "Database problem filed to save changes"
+            }.showAndWait()
+        }
+      }
 
     } else {
       // Nothing selected.
       val alert = new Alert(Alert.AlertType.Warning){
         initOwner(HeroApp.stage)
         title       = "No Selection"
-        headerText  = "No Hero Selected"
-        contentText = "Please select a hero from the table."
+        headerText  = "No Hero Was Selected"
+        contentText = "Please select a Hero in the table."
       }.showAndWait()
     }
   }
@@ -129,7 +152,7 @@ class HeroOverviewController(
       "", "", "", "", "", "",
       0,0,0,0)
     val okClicked = HeroApp.showCreatorOverview(hero);
-    if (okClicked) {
+    if (okClicked == true) {
       hero.save() match {
         case Success(x) =>
           HeroApp.heroData += hero
@@ -142,5 +165,18 @@ class HeroOverviewController(
           }.showAndWait()
       }
     }
+  }
+
+  def getMouseLocation(mouseEvent: MouseEvent){
+    posX = mouseEvent.getX()
+    posY = mouseEvent.getY()
+
+    println(posY)
+    println(posX)
+  }
+
+  def moveWindow(mouseDragEvent: MouseDragEvent): Unit ={
+    appWindow.x_= (appWindow.getX - posX)
+    appWindow.y_= (appWindow.getY - posY)
   }
 }

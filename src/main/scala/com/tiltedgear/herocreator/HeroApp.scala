@@ -11,8 +11,6 @@ import scalafx.Includes._
 import scalafxml.core.{FXMLLoader, FXMLView, NoDependencyResolver}
 import javafx.{scene => jfxs}
 import scalafx.collections.ObservableBuffer
-import scalafx.scene.control.Alert
-import scalafx.scene.control.Alert.AlertType
 import scalafx.stage.{Modality, Stage, StageStyle}
 
 object HeroApp extends JFXApp {
@@ -20,8 +18,9 @@ object HeroApp extends JFXApp {
   Database.setupDB()
   val heroData = new ObservableBuffer[Hero]()
 
-  /*Hardcoded Data*/
-  HeroFactory.Generator()
+  /*HeroFactory.Generator(10)*/
+
+  heroData ++= Hero.getAllHeroes
 
   val resource = getClass.getResource("view/HeroOverview.fxml")
   val loader = new FXMLLoader(resource, NoDependencyResolver)
@@ -58,7 +57,6 @@ object HeroApp extends JFXApp {
     }
 
     dialog.initStyle(StageStyle.Undecorated)
-
     control2.dialogStage = dialog
     control2.hero = hero
     dialog.showAndWait()
