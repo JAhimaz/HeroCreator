@@ -63,10 +63,10 @@ class HeroOverviewController(
         heroLoreLabel.text <== hero.heroLore
         heroOccupationLabel.text <== hero.heroOccupation
         heroRaceLabel.text <== hero.heroRace
-        heroHealthLabel.text = hero.heroHealth.value.toString + " HP"
-        heroArmourLabel.text = hero.heroArmour.value.toString + " AP"
-        heroSpeedLabel.text = hero.heroSpeed.value.toString + " km\\h"
-        heroBaseDamageLabel.text = hero.heroBaseDamage.value.toString + " Dps";
+        heroHealthLabel.text = hero.heroHealth.value.toString
+        heroArmourLabel.text = hero.heroArmour.value.toString
+        heroSpeedLabel.text = hero.heroSpeed.value.toString
+        heroBaseDamageLabel.text = hero.heroBaseDamage.value.toString;
 
       case None =>
         heroNameLabel.text.unbind()
