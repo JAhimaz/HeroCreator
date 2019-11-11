@@ -8,6 +8,7 @@ import scalafx.stage.Stage
 import scalafxml.core.macros.sfxml
 import scalafx.event.ActionEvent
 import scalafx.Includes._
+import scalafx.scene.layout.AnchorPane
 
 @sfxml
 class CreatorOverviewController(
@@ -21,6 +22,7 @@ class CreatorOverviewController(
   private val heroArmourField : TextField,
   private val heroSpeedField : TextField,
   private val heroBaseDamageField : TextField,
+  private val backgroundFaction: AnchorPane,
 ) {
 
   for (i <- HeroFactory.possibleRoles) {
@@ -144,7 +146,7 @@ class CreatorOverviewController(
       errorMessage += "Please Enter A Value For Speed!\n"
     else {
       try {
-        Integer.parseInt(heroSpeedField.getText()) > 10;
+        Integer.parseInt(heroSpeedField.getText());
       } catch {
         case e: NumberFormatException =>
           errorMessage += "Speed is Not Valid (must be an integer)!\n"
