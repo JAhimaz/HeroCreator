@@ -6,6 +6,7 @@ import com.tiltedgear.herocreator.model.Hero
 import scalafx.scene.control.{Alert, Button, Label, TableColumn, TableView}
 import scalafxml.core.macros.sfxml
 import com.tiltedgear.herocreator.HeroApp
+import com.tiltedgear.herocreator.util.HeroCardImages
 import com.tiltedgear.herocreator.util.factory.HeroFactory
 import scalafx.Includes._
 import scalafx.application.Platform
@@ -14,7 +15,6 @@ import scalafx.beans.property.StringProperty
 import scalafx.scene.control.Alert.AlertType
 import scalafx.scene.image.{Image, ImageView}
 
-import scala.collection.mutable.ListBuffer
 import scala.util.{Failure, Success}
 
 @sfxml
@@ -32,6 +32,7 @@ class HeroOverviewController(
   private val heroSpeedLabel : Label,
   private val heroBaseDamageLabel : Label,
   private val factionLogo : ImageView,
+  private val roleIcon : ImageView,
 
   private val statsLabel : Label,
   private val staticHealthLabel : Label,
@@ -77,10 +78,13 @@ class HeroOverviewController(
         heroSpeedLabel.text = hero.heroSpeed.value.toString
         heroBaseDamageLabel.text = hero.heroBaseDamage.value.toString;
 
-        val chosenFactionURI : InputStream = fetchFactionLogo(hero.heroAffiliation)
-        val image : Image = new Image(chosenFactionURI)
+        val chosenRoleURI : InputStream = HeroCardImages.fetchRoleLogo(hero.heroRole)
+        val roleImage : Image = new Image(chosenRoleURI)
+        roleIcon.setImage(roleImage)
 
-        factionLogo.setImage(image)
+        val chosenFactionURI : InputStream = HeroCardImages.fetchFactionLogo(hero.heroAffiliation)
+        val factionImage : Image = new Image(chosenFactionURI)
+        factionLogo.setImage(factionImage)
 
       case None =>
         heroNameLabel.text.unbind()
@@ -187,37 +191,4 @@ class HeroOverviewController(
     }
   }
 
-  def fetchFactionLogo(affiliationName : StringProperty) : InputStream = {
-    val path: String = "/images/faction_logos/"
-
-    if (affiliationName.value == "Aedrussurean Empire"){
-      return getClass.getResourceAsStream(path + "Aedrussurean_Empire.png")
-    }
-    if (affiliationName.value == "Aukiyeorith Kingdom"){
-      return getClass.getResourceAsStream(path + "Aukiyeorith_Kingdom.png")
-    }
-    if (affiliationName.value == "Bourene Kingdom"){
-      return getClass.getResourceAsStream(path + "Bourene_Kingdom.png")
-    }
-    if (affiliationName.value == "Chiterra Kingdom"){
-      return getClass.getResourceAsStream(path + "Chiterra_Kingdom.png")
-    }
-    if (affiliationName.value == "Eadrakidora Dynasty"){
-      return getClass.getResourceAsStream(path + "Eadrakidora_Dynasty.png")
-    }
-    if (affiliationName.value == "Higary Kingdom"){
-      return getClass.getResourceAsStream(path + "Higary_Kingdom.png")
-    }
-    if (affiliationName.value == "Kugales Empire"){
-      return getClass.getResourceAsStream(path + "Kugales_Empire.png")
-    }
-    if (affiliationName.value == "Odrouba Kingdom"){
-      return getClass.getResourceAsStream(path + "Odrouba_Kingdom.png")
-    }
-    if (affiliationName.value == "Okhepitus Empire"){
-      return getClass.getResourceAsStream(path + "Okhepitus_Empire.png")
-    }
-
-    getClass.getResourceAsStream("")
-  }
 }
