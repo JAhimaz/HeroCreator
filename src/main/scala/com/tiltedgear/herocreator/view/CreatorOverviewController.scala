@@ -1,7 +1,6 @@
 package com.tiltedgear.herocreator.view
 
 import com.tiltedgear.herocreator.model.Hero
-import com.tiltedgear.herocreator.HeroApp
 import com.tiltedgear.herocreator.util.factory.HeroFactory
 import scalafx.scene.control.{Alert, ComboBox, TextArea, TextField}
 import scalafx.stage.Stage

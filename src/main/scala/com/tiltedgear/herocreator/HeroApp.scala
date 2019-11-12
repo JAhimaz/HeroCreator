@@ -67,8 +67,6 @@ object HeroApp extends JFXApp {
     dialog.showAndWait()
     control2.okClicked
   }
-
-
 }
 
 /*

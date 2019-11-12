@@ -65,7 +65,4 @@
       </TabPane>
       <Button fx:id="exitButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleCancel" styleClass="exit-button" text="X" textFill="WHITE" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
    </children>
-<!--   <stylesheets>
-      <String fx:value="@stylesheet.css" /> &lt;!&ndash;Temporary, Remove After&ndash;&gt;
-   </stylesheets>-->
 </AnchorPane>
