@@ -259,8 +259,8 @@
                         </HBox>
                         <MenuButton layoutX="14.0" layoutY="517.0" mnemonicParsing="false" text="Extras" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="14.0">
                           <items>
-                            <MenuItem fx:id="screenShotButton" mnemonicParsing="false" onAction="#handleSnapshotHero" text="📷 Export" />
-                            <MenuItem fx:id="generateHeroButton" mnemonicParsing="false" onAction="#handleGenerateHero" text="Generate" />
+                            <MenuItem fx:id="screenShotButton" mnemonicParsing="false" onAction="#handleSnapshotHero" style="-fx-text-fill: white;" text="📷 Export" />
+                            <MenuItem fx:id="generateHeroButton" mnemonicParsing="false" onAction="#handleGenerateHero" style="-fx-text-fill: white;" text="Generate" />
                           </items>
                         </MenuButton>
                      </children>
