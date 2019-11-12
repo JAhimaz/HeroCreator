@@ -217,7 +217,7 @@
                                           </LinearGradient>
                                        </textFill>
                                     </Label>
-                                    <Label fx:id="heroLoreLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="73.0" layoutY="134.0" prefHeight="113.0" prefWidth="216.0" text="PLACEHOLDER TEXT" textAlignment="CENTER" wrapText="true">
+                                    <Label fx:id="heroLoreLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="49.0" layoutY="120.0" prefHeight="177.0" prefWidth="264.0" text="PLACEHOLDER TEXT" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="49.0" AnchorPane.rightAnchor="49.0">
                                        <font>
                                           <Font name="Copperplate Gothic Light" size="12.0" />
                                        </font>

@@ -4,7 +4,6 @@ import com.tiltedgear.herocreator.model.Hero
 import scalafx.scene.control.Alert
 import scalikejdbc._
 
-import scala.io.Source
 import scala.util.{Failure, Random, Success}
 
 object HeroFactory {
@@ -439,16 +438,20 @@ object HeroFactory {
   }
 
   def Generator(): Hero ={
-    val nameGenerator: String = GetRandomElement(possibleFirstNames, rand) + " " + GetRandomElement(possibleLastNames, rand)
-    val role: String = GetRandomElement(possibleRoles, rand)
+    val nameGenerator: String = Misc.GetRandomElement(possibleFirstNames, rand) + " " + Misc.GetRandomElement(possibleLastNames, rand)
+
+    val role: String = Misc.GetRandomElement(possibleRoles, rand)
+    val faction: String = Misc.GetRandomElement(possibleFactions, rand)
+    val occupation: String = Misc.GetRandomElement(possibleOccupations, rand)
+    val race: String = Misc.GetRandomElement(possibleRaces, rand)
 
     val hero = new Hero(
       nameGenerator,
       role,
-      GetRandomElement(possibleFactions, rand),
-      LoremIpsum.sentences(1),
-      GetRandomElement(possibleOccupations, rand),
-      GetRandomElement(possibleRaces, rand),
+      faction,
+      LoreGenerator.generateLore(nameGenerator, faction, role, occupation),
+      occupation,
+      race,
       rand.nextInt(100)+50,
       rand.nextInt(100)+50,
       rand.nextInt(50)+25,
@@ -460,16 +463,20 @@ object HeroFactory {
 
   def Generator(noOfHeroes: Int) = {
     for(i <- 1 to noOfHeroes){
-      val nameGenerator: String = GetRandomElement(possibleFirstNames, rand) + " " + GetRandomElement(possibleLastNames, rand)
-      val role: String = GetRandomElement(possibleRoles, rand)
+      val nameGenerator: String = Misc.GetRandomElement(possibleFirstNames, rand) + " " + Misc.GetRandomElement(possibleLastNames, rand)
+
+      val role: String = Misc.GetRandomElement(possibleRoles, rand)
+      val faction: String = Misc.GetRandomElement(possibleFactions, rand)
+      val occupation: String = Misc.GetRandomElement(possibleOccupations, rand)
+      val race: String = Misc.GetRandomElement(possibleRaces, rand)
 
       val hero = new Hero(
         nameGenerator,
         role,
-        GetRandomElement(possibleFactions, rand),
-        LoremIpsum.sentences(1),
-        GetRandomElement(possibleOccupations, rand),
-        GetRandomElement(possibleRaces, rand),
+        faction,
+        LoreGenerator.generateLore(nameGenerator, faction, role, occupation),
+        occupation,
+        race,
         rand.nextInt(100)+50,
         rand.nextInt(100)+50,
         rand.nextInt(50)+25,
@@ -491,6 +498,4 @@ object HeroFactory {
     }
   }
 
-  def GetRandomElement(list: Seq[String], random: Random): String =
-    list(random.nextInt(list.length))
 }

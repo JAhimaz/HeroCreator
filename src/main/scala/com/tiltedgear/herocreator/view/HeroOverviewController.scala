@@ -78,11 +78,12 @@ class HeroOverviewController(
         heroSpeedLabel.text = hero.heroSpeed.value.toString
         heroBaseDamageLabel.text = hero.heroBaseDamage.value.toString;
 
-        val chosenRoleURI : InputStream = HeroCardImages.fetchRoleLogo(hero.heroRole)
+        val chosenRoleURI : InputStream = HeroCardImages.fetchRoleLogo(hero.heroRole.value)
         val roleImage : Image = new Image(chosenRoleURI)
         roleIcon.setImage(roleImage)
 
-        val chosenFactionURI : InputStream = HeroCardImages.fetchFactionLogo(hero.heroAffiliation)
+        print(hero.heroAffiliation.value)
+        val chosenFactionURI : InputStream = HeroCardImages.fetchFactionLogo(hero.heroAffiliation.value)
         val factionImage : Image = new Image(chosenFactionURI)
         factionLogo.setImage(factionImage)
 
