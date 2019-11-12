@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.effect.*?>
 <?import javafx.scene.layout.*?>
@@ -63,6 +64,5 @@
             </Tab>
          </tabs>
       </TabPane>
-      <Button fx:id="exitButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleCancel" styleClass="exit-button" text="X" textFill="WHITE" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
    </children>
 </AnchorPane>

@@ -485,7 +485,7 @@ object HeroFactory {
 
       hero.save() match {
         case Success(x) =>
-          /*HeroApp.heroData += hero*/
+          HeroApp.heroData += hero
         case Failure(e) =>
           val alert = new Alert(Alert.AlertType.Warning) {
             initOwner(HeroApp.stage)

@@ -6,7 +6,7 @@ import java.io.{File, IOException, InputStream}
 import javax.imageio.ImageIO
 import javax.imageio.ImageIO
 import com.tiltedgear.herocreator.model.Hero
-import scalafx.scene.control.{Alert, Button, Label, TableColumn, TableView}
+import scalafx.scene.control.{Alert, Button, Label, TableColumn, TableView, TextInputDialog}
 import scalafxml.core.macros.sfxml
 import com.tiltedgear.herocreator.HeroApp
 import com.tiltedgear.herocreator.util.HeroCardImages
@@ -24,6 +24,7 @@ import scalafx.scene.image.{Image, ImageView, WritableImage}
 import scalafx.scene.layout.AnchorPane
 import scalafx.scene.shape.Rectangle
 import scalafx.scene.transform.Transform
+import scalafx.stage.DirectoryChooser
 
 import scala.util.{Failure, Success}
 
@@ -121,21 +122,72 @@ class HeroOverviewController(
     }
   }
 
+  def handleGenerateHero(action : ActionEvent) = {
+    var errorMessage = ""
+    try {
+      val dialog = new TextInputDialog(defaultValue = "5") {
+        initOwner(HeroApp.stage)
+        title = "Mass Hero Generation"
+        headerText = "Generate Multiple Heroes At Once"
+        contentText = "Number Of Heroes To Create:"
+      }
+      val result = dialog.showAndWait()
+      result match {
+        case Some(noOfHeroes) =>
+          Integer.parseInt(noOfHeroes)
+          if(noOfHeroes.toInt > 25){
+            errorMessage += "Cannot Generate Over 25 Heroes To Prevent Crashing"
+          }else if(noOfHeroes.toInt < 1){
+            errorMessage += "Please Choose A Number Greater Than 0"
+          }else{
+            HeroFactory.Generator(noOfHeroes.toInt)
+          }
+        case None =>
+      }
+    } catch {
+      case e: NumberFormatException =>
+        errorMessage += "Health is Not Valid (must be an integer)!\n"
+    }
+
+    if (errorMessage.length() == 0) {
+    } else {
+      // Show the error message.
+      val alert = new Alert(Alert.AlertType.Error) {
+        initOwner(HeroApp.stage)
+        title = "Invalid Fields"
+        headerText = "Please correct invalid fields"
+        contentText = errorMessage
+      }.showAndWait()
+    }
+
+  }
+
   def handleSnapshotHero(action : ActionEvent) = {
     val selectedIndex = heroTable.selectionModel().selectedIndex.value
     val selectedHero = heroTable.selectionModel().selectedItem.value
 
     if(selectedIndex >= 0){
+      val directoryChooser : DirectoryChooser = new DirectoryChooser()
+      val selectedDirectory : File = directoryChooser.showDialog(HeroApp.stage)
+
       val node = heroPane
       val sp : SnapshotParameters = new SnapshotParameters()
       sp.setTransform(Transform.scale(5, 5))
 
       val snapshot : WritableImage = node.snapshot(sp, null)
       val name : String = selectedHero.heroName.value
-      val file : File = new File(System.getProperty("user.home") + "/Desktop/" + name + ".png")
+      val file : File = new File(selectedDirectory.getAbsolutePath + "/" + name + ".png")
       val bImage : BufferedImage = SwingFXUtils.fromFXImage(snapshot, null)
 
-      try ImageIO.write(bImage, "png", file)
+      try {
+        ImageIO.write(bImage, "png", file)
+        new Alert(AlertType.Information) {
+          initOwner(HeroApp.stage)
+          title = "HeroCreator | Image Saved"
+          headerText = "Successfully Saved Image"
+          contentText = "The Image Was Saved At " + file.getAbsolutePath
+        }.showAndWait()
+      }
       catch {
         case exception: IOException =>
           print("Error Saving Image, Reason: " + exception)
