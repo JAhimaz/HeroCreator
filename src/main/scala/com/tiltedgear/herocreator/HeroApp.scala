@@ -23,7 +23,7 @@ object HeroApp extends JFXApp {
   var screenPosX: Double = 0
   var screenPosY: Double = 0
 
-  /*HeroFactory.Generator(10)*/
+  /*HeroFactory.Generator(15)*/
 
   heroData ++= Hero.getAllHeroes
 
@@ -67,8 +67,6 @@ object HeroApp extends JFXApp {
     dialog.showAndWait()
     control2.okClicked
   }
-
-
 }
 
 /*

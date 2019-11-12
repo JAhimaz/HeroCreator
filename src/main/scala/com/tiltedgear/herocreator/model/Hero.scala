@@ -121,7 +121,7 @@ object Hero extends Database {
 			  heroName varchar(64),
 			  heroRole varchar(64),
 			  heroAffiliation varchar(64),
-        heroLore text,
+        heroLore varchar(600),
         heroOccupation varchar(64),
         heroRace varchar(64),
 			  heroHealth int,

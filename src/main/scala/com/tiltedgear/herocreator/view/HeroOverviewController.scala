@@ -1,19 +1,29 @@
 package com.tiltedgear.herocreator.view
 
-import java.io.InputStream
+import java.awt.image.BufferedImage
+import java.io.{File, IOException, InputStream}
 
+import javax.imageio.ImageIO
+import javax.imageio.ImageIO
 import com.tiltedgear.herocreator.model.Hero
 import scalafx.scene.control.{Alert, Button, Label, TableColumn, TableView}
 import scalafxml.core.macros.sfxml
 import com.tiltedgear.herocreator.HeroApp
 import com.tiltedgear.herocreator.util.HeroCardImages
+import com.tiltedgear.herocreator.util.HeroCardImages.getClass
 import com.tiltedgear.herocreator.util.factory.HeroFactory
 import scalafx.Includes._
 import scalafx.application.Platform
 import scalafx.event.ActionEvent
 import scalafx.beans.property.StringProperty
+import scalafx.embed.swing.SwingFXUtils
+import scalafx.geometry.Rectangle2D
+import scalafx.scene.SnapshotParameters
 import scalafx.scene.control.Alert.AlertType
-import scalafx.scene.image.{Image, ImageView}
+import scalafx.scene.image.{Image, ImageView, WritableImage}
+import scalafx.scene.layout.AnchorPane
+import scalafx.scene.shape.Rectangle
+import scalafx.scene.transform.Transform
 
 import scala.util.{Failure, Success}
 
@@ -39,6 +49,8 @@ class HeroOverviewController(
   private val staticArmourLabel : Label,
   private val staticSpeedLabel : Label,
   private val staticDamageLabel : Label,
+
+  private val heroPane : AnchorPane,
 ) {
 
   var staticLabels: List[Label] = List(statsLabel, staticSpeedLabel, staticHealthLabel, staticDamageLabel, staticArmourLabel)
@@ -78,11 +90,11 @@ class HeroOverviewController(
         heroSpeedLabel.text = hero.heroSpeed.value.toString
         heroBaseDamageLabel.text = hero.heroBaseDamage.value.toString;
 
-        val chosenRoleURI : InputStream = HeroCardImages.fetchRoleLogo(hero.heroRole)
+        val chosenRoleURI : InputStream = HeroCardImages.fetchRoleLogo(hero.heroRole.value)
         val roleImage : Image = new Image(chosenRoleURI)
         roleIcon.setImage(roleImage)
 
-        val chosenFactionURI : InputStream = HeroCardImages.fetchFactionLogo(hero.heroAffiliation)
+        val chosenFactionURI : InputStream = HeroCardImages.fetchFactionLogo(hero.heroAffiliation.value)
         val factionImage : Image = new Image(chosenFactionURI)
         factionLogo.setImage(factionImage)
 
@@ -106,6 +118,35 @@ class HeroOverviewController(
         heroArmourLabel.text = ""
         heroSpeedLabel.text = ""
         heroBaseDamageLabel.text = ""
+    }
+  }
+
+  def handleSnapshotHero(action : ActionEvent) = {
+    val selectedIndex = heroTable.selectionModel().selectedIndex.value
+    val selectedHero = heroTable.selectionModel().selectedItem.value
+
+    if(selectedIndex >= 0){
+      val node = heroPane
+      val sp : SnapshotParameters = new SnapshotParameters()
+      sp.setTransform(Transform.scale(5, 5))
+
+      val snapshot : WritableImage = node.snapshot(sp, null)
+      val name : String = selectedHero.heroName.value
+      val file : File = new File(System.getProperty("user.home") + "/Desktop/" + name + ".png")
+      val bImage : BufferedImage = SwingFXUtils.fromFXImage(snapshot, null)
+
+      try ImageIO.write(bImage, "png", file)
+      catch {
+        case exception: IOException =>
+          print("Error Saving Image, Reason: " + exception)
+      }
+    }else {
+      val alert = new Alert(AlertType.Warning) {
+        initOwner(HeroApp.stage)
+        title = "No Selection"
+        headerText = "No Hero Selected"
+        contentText = "Please select a hero in the table."
+      }.showAndWait()
     }
   }
 
