@@ -22,9 +22,9 @@ object HeroApp extends JFXApp {
 
   heroData ++= Hero.getAllHeroes
 
-  val resource = getClass.getResource("view/HeroOverview.fxml")
-  val loader = new FXMLLoader(resource, NoDependencyResolver)
-  loader.load()
+  val rootResource = getClass.getResourceAsStream("view/HeroOverview.fxml")
+  val loader = new FXMLLoader(null, NoDependencyResolver)
+  loader.load(rootResource)
   val roots = loader.getRoot[jfxs.layout.AnchorPane]
   val cssResource = getClass.getResource("view/stylesheet.css")
   roots.stylesheets = List(cssResource.toExternalForm)

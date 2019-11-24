@@ -13,9 +13,6 @@
 <AnchorPane prefHeight="600" prefWidth="600.0" style="-fx-background-color: #0a0a0a;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tiltedgear.herocreator.view.HeroOverviewController">
    <children>
       <TabPane layoutX="10.0" layoutY="10.0" prefHeight="600.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
-         <stylesheets>
-            <URL value="@stylesheet.css" />
-         </stylesheets>
          <tabs>
             <Tab text="Hero Viewer">
                <content>
@@ -259,8 +256,8 @@
                         </HBox>
                         <MenuButton layoutX="14.0" layoutY="517.0" mnemonicParsing="false" text="Extras" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="14.0">
                           <items>
-                            <MenuItem fx:id="screenShotButton" mnemonicParsing="false" onAction="#handleSnapshotHero" style="-fx-text-fill: white;" text="📷 Export" />
-                            <MenuItem fx:id="generateHeroButton" mnemonicParsing="false" onAction="#handleGenerateHero" style="-fx-text-fill: white;" text="Generate" />
+                            <MenuItem fx:id="screenShotButton" mnemonicParsing="false" onAction="#handleSnapshotHero" text="📷 Export" />
+                            <MenuItem fx:id="generateHeroButton" mnemonicParsing="false" onAction="#handleGenerateHero" text="Generate" />
                           </items>
                         </MenuButton>
                      </children>

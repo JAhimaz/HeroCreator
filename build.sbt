@@ -19,4 +19,3 @@ libraryDependencies ++= Seq(
   "org.apache.derby" % "derby" % "10.13.1.1"
 )
 
-fork := true

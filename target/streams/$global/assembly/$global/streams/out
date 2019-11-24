@@ -1,22 +1,22 @@
 [debug] Including from cache: commons-logging-1.2.jar
-[debug] Including from cache: commons-dbcp2-2.1.1.jar
-[debug] Including from cache: commons-pool2-2.4.2.jar
-[debug] Including from cache: joda-time-2.9.9.jar
-[debug] Including from cache: scalikejdbc-interpolation_2.12-3.1.0.jar
-[debug] Including from cache: scalikejdbc_2.12-3.1.0.jar
-[debug] Including from cache: h2-1.4.196.jar
-[debug] Including from cache: slf4j-api-1.7.25.jar
-[debug] Including from cache: scalikejdbc-core_2.12-3.1.0.jar
 [debug] Including from cache: logback-classic-1.2.3.jar
-[debug] Including from cache: scalikejdbc-interpolation-macro_2.12-3.1.0.jar
+[debug] Including from cache: scalikejdbc-interpolation_2.12-3.1.0.jar
+[debug] Including from cache: joda-time-2.9.9.jar
 [debug] Including from cache: logback-core-1.2.3.jar
+[debug] Including from cache: h2-1.4.196.jar
+[debug] Including from cache: commons-dbcp2-2.1.1.jar
 [debug] Including from cache: scalafxml-core-macros-sfx8_2.12-0.4.jar
+[debug] Including from cache: scalikejdbc_2.12-3.1.0.jar
 [debug] Including from cache: scalafxml-core-sfx8_2.12-0.4.jar
+[debug] Including from cache: scalikejdbc-core_2.12-3.1.0.jar
+[debug] Including from cache: slf4j-api-1.7.25.jar
 [debug] Including from cache: scalafx_2.12-8.0.181-R13.jar
-[debug] Including from cache: derby-10.13.1.1.jar
-[debug] Including from cache: scala-reflect-2.12.10.jar
+[debug] Including from cache: scalikejdbc-interpolation-macro_2.12-3.1.0.jar
 [debug] Including from cache: joda-convert-1.8.2.jar
 [debug] Including from cache: scala-parser-combinators_2.12-1.0.6.jar
+[debug] Including from cache: commons-pool2-2.4.2.jar
+[debug] Including from cache: derby-10.13.1.1.jar
+[debug] Including from cache: scala-reflect-2.12.10.jar
 [debug] Including from cache: scala-library-2.12.10.jar
 [debug] Calculate mappings...
 [debug] Checking every *.class/*.jar file's SHA-1.
@@ -41,6 +41,7 @@
 [debug] Merging 'META-INF\services\java.sql.Driver' with strategy 'filterDistinctLines'
 [info] Strategy 'discard' was applied to 17 files (Run the task at debug level to see details)
 [info] Strategy 'filterDistinctLines' was applied to a file (Run the task at debug level to see details)
+[debug] SHA-1: 0b9c4d5a74e66f55cf1da1121ce32f9992d5d618
 [info] Packaging D:\Projects\HeroCreator\target\scala-2.12\HeroCreator-assembly-0.1.jar ...
 [debug] Input file mappings:
 [debug] 	LICENSE_scala-library-2.12.10
@@ -1237,10 +1238,14 @@
 [debug] 	  D:\Projects\HeroCreator\target\streams\$global\assemblyOption\$global\streams\assembly\40e284f0dfa0b65d65cd8862c5a2e3a35b964ace_dir\com\tiltedgear\herocreator\util\factory\HeroFactory$.class
 [debug] 	com\tiltedgear\herocreator\util\factory\HeroFactory.class
 [debug] 	  D:\Projects\HeroCreator\target\streams\$global\assemblyOption\$global\streams\assembly\40e284f0dfa0b65d65cd8862c5a2e3a35b964ace_dir\com\tiltedgear\herocreator\util\factory\HeroFactory.class
-[debug] 	com\tiltedgear\herocreator\util\factory\LoremIpsum$.class
-[debug] 	  D:\Projects\HeroCreator\target\streams\$global\assemblyOption\$global\streams\assembly\40e284f0dfa0b65d65cd8862c5a2e3a35b964ace_dir\com\tiltedgear\herocreator\util\factory\LoremIpsum$.class
-[debug] 	com\tiltedgear\herocreator\util\factory\LoremIpsum.class
-[debug] 	  D:\Projects\HeroCreator\target\streams\$global\assemblyOption\$global\streams\assembly\40e284f0dfa0b65d65cd8862c5a2e3a35b964ace_dir\com\tiltedgear\herocreator\util\factory\LoremIpsum.class
+[debug] 	com\tiltedgear\herocreator\util\factory\LoreGenerator$.class
+[debug] 	  D:\Projects\HeroCreator\target\streams\$global\assemblyOption\$global\streams\assembly\40e284f0dfa0b65d65cd8862c5a2e3a35b964ace_dir\com\tiltedgear\herocreator\util\factory\LoreGenerator$.class
+[debug] 	com\tiltedgear\herocreator\util\factory\LoreGenerator.class
+[debug] 	  D:\Projects\HeroCreator\target\streams\$global\assemblyOption\$global\streams\assembly\40e284f0dfa0b65d65cd8862c5a2e3a35b964ace_dir\com\tiltedgear\herocreator\util\factory\LoreGenerator.class
+[debug] 	com\tiltedgear\herocreator\util\factory\Misc$.class
+[debug] 	  D:\Projects\HeroCreator\target\streams\$global\assemblyOption\$global\streams\assembly\40e284f0dfa0b65d65cd8862c5a2e3a35b964ace_dir\com\tiltedgear\herocreator\util\factory\Misc$.class
+[debug] 	com\tiltedgear\herocreator\util\factory\Misc.class
+[debug] 	  D:\Projects\HeroCreator\target\streams\$global\assemblyOption\$global\streams\assembly\40e284f0dfa0b65d65cd8862c5a2e3a35b964ace_dir\com\tiltedgear\herocreator\util\factory\Misc.class
 [debug] 	com\tiltedgear\herocreator\view\CreatorOverview.fxml
 [debug] 	  D:\Projects\HeroCreator\target\streams\$global\assemblyOption\$global\streams\assembly\40e284f0dfa0b65d65cd8862c5a2e3a35b964ace_dir\com\tiltedgear\herocreator\view\CreatorOverview.fxml
 [debug] 	com\tiltedgear\herocreator\view\CreatorOverviewController$Controller$$anon$1.class
@@ -1261,12 +1266,22 @@
 [debug] 	  D:\Projects\HeroCreator\target\streams\$global\assemblyOption\$global\streams\assembly\40e284f0dfa0b65d65cd8862c5a2e3a35b964ace_dir\com\tiltedgear\herocreator\view\HeroOverviewController$Controller$$anon$4.class
 [debug] 	com\tiltedgear\herocreator\view\HeroOverviewController$Controller$$anon$5.class
 [debug] 	  D:\Projects\HeroCreator\target\streams\$global\assemblyOption\$global\streams\assembly\40e284f0dfa0b65d65cd8862c5a2e3a35b964ace_dir\com\tiltedgear\herocreator\view\HeroOverviewController$Controller$$anon$5.class
+[debug] 	com\tiltedgear\herocreator\view\HeroOverviewController$Controller$$anon$6.class
+[debug] 	  D:\Projects\HeroCreator\target\streams\$global\assemblyOption\$global\streams\assembly\40e284f0dfa0b65d65cd8862c5a2e3a35b964ace_dir\com\tiltedgear\herocreator\view\HeroOverviewController$Controller$$anon$6.class
+[debug] 	com\tiltedgear\herocreator\view\HeroOverviewController$Controller$$anon$7.class
+[debug] 	  D:\Projects\HeroCreator\target\streams\$global\assemblyOption\$global\streams\assembly\40e284f0dfa0b65d65cd8862c5a2e3a35b964ace_dir\com\tiltedgear\herocreator\view\HeroOverviewController$Controller$$anon$7.class
+[debug] 	com\tiltedgear\herocreator\view\HeroOverviewController$Controller$$anon$8.class
+[debug] 	  D:\Projects\HeroCreator\target\streams\$global\assemblyOption\$global\streams\assembly\40e284f0dfa0b65d65cd8862c5a2e3a35b964ace_dir\com\tiltedgear\herocreator\view\HeroOverviewController$Controller$$anon$8.class
+[debug] 	com\tiltedgear\herocreator\view\HeroOverviewController$Controller$$anon$9.class
+[debug] 	  D:\Projects\HeroCreator\target\streams\$global\assemblyOption\$global\streams\assembly\40e284f0dfa0b65d65cd8862c5a2e3a35b964ace_dir\com\tiltedgear\herocreator\view\HeroOverviewController$Controller$$anon$9.class
 [debug] 	com\tiltedgear\herocreator\view\HeroOverviewController$Controller.class
 [debug] 	  D:\Projects\HeroCreator\target\streams\$global\assemblyOption\$global\streams\assembly\40e284f0dfa0b65d65cd8862c5a2e3a35b964ace_dir\com\tiltedgear\herocreator\view\HeroOverviewController$Controller.class
 [debug] 	com\tiltedgear\herocreator\view\HeroOverviewController.class
 [debug] 	  D:\Projects\HeroCreator\target\streams\$global\assemblyOption\$global\streams\assembly\40e284f0dfa0b65d65cd8862c5a2e3a35b964ace_dir\com\tiltedgear\herocreator\view\HeroOverviewController.class
 [debug] 	com\tiltedgear\herocreator\view\stylesheet.css
 [debug] 	  D:\Projects\HeroCreator\target\streams\$global\assemblyOption\$global\streams\assembly\40e284f0dfa0b65d65cd8862c5a2e3a35b964ace_dir\com\tiltedgear\herocreator\view\stylesheet.css
+[debug] 	images\HeroCreator.png
+[debug] 	  D:\Projects\HeroCreator\target\streams\$global\assemblyOption\$global\streams\assembly\40e284f0dfa0b65d65cd8862c5a2e3a35b964ace_dir\images\HeroCreator.png
 [debug] 	images\background.jpg
 [debug] 	  D:\Projects\HeroCreator\target\streams\$global\assemblyOption\$global\streams\assembly\40e284f0dfa0b65d65cd8862c5a2e3a35b964ace_dir\images\background.jpg
 [debug] 	images\faction_logos\Aedrussurean_Empire.png
