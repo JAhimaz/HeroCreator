@@ -11,11 +11,7 @@
     -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
 }
 
-.menu-button .label{
-    -fx-text-fill: white;
-}
-
-.menu-item .label {
+.menu-button .label, .menu-item .label{
     -fx-text-fill: white;
 }
 

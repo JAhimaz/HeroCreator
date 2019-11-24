@@ -6,7 +6,7 @@ import java.io.{File, IOException, InputStream}
 import javax.imageio.ImageIO
 import javax.imageio.ImageIO
 import com.tiltedgear.herocreator.model.Hero
-import scalafx.scene.control.{Alert, Button, Label, TableColumn, TableView, TextInputDialog}
+import scalafx.scene.control.{Alert, Button, Label, ProgressBar, TableColumn, TableView, TextInputDialog}
 import scalafxml.core.macros.sfxml
 import com.tiltedgear.herocreator.HeroApp
 import com.tiltedgear.herocreator.util.HeroCardImages
@@ -64,10 +64,6 @@ class HeroOverviewController(
   heroTable.selectionModel().selectedItem.onChange(
     (_, _, newValue) => showHeroDetails(Option(newValue))
   )
-
-  def doGenerateHeroes(): Unit ={
-    HeroFactory.Generator(2)
-  }
 
   def handleApplicationExit(action: ActionEvent) = {
     Platform.exit();

@@ -11,7 +11,6 @@ import scala.util.Try
 class Hero(heroNameS: String, heroRoleS: String, heroAffiliationS: String, heroLoreS: String, heroOccupationS: String, heroRaceS: String,
            heroHPI: Int, heroArmourI: Int, heroSpeedI: Int, heroBaseDamageI: Int) extends Database{
 
-/*  def this() = this(null, null, null, null, null, null, null, null, null, null)*/
   var heroName = new StringProperty(heroNameS)
   var heroRole = new StringProperty(heroRoleS)
   var heroAffiliation = new StringProperty(heroAffiliationS)
@@ -24,7 +23,6 @@ class Hero(heroNameS: String, heroRoleS: String, heroAffiliationS: String, heroL
   var heroSpeed = IntegerProperty(heroSpeedI)
   var heroBaseDamage = IntegerProperty(heroBaseDamageI)
 
-  //Refactor This To Match Hero
   def save() : Try[Int] = {
     if (!(isExist)) {
       Try(DB autoCommit { implicit session =>
